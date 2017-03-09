@@ -39,6 +39,9 @@
 .letter-space{
     letter-spacing: 3px;
 }
+.letter-space2{
+    letter-spacing: 2px;
+}
 
 .br{
     margin-top: 15px;
