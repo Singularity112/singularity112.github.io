@@ -1,0 +1,36 @@
+﻿<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="myApp.js"></script>
+</head>
+
+<body ng-app = "myApp" ng-controller = "myController">
+    <nav>
+        <div id = "logo"><h1>Singularity</h1></div>
+        <div id = "tags">
+            <ul>
+                <li ng-repeat = "t in tags" ng-click = "toggle(t); total()" ng-class = "{active:t.active}">
+                    <span class = "tag">{{t.tag}}</span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id = "main">
+        <ul>
+            <li ng-repeat = "i in item" ng-if = "i.active == true">
+                <div class="item-title">{{i.title}}</div>
+                <div class="item-tags">
+                    <span>Tags: </span>
+                    <span ng-repeat = "t in i.tags">{{t}}</span>
+                </div>
+            </li>
+        </ul>
+    </section>
+</body>
+
+
+</html>

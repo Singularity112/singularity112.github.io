@@ -1,0 +1,74 @@
+﻿body{
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("http://developer.roman.grinyov.name/images/blog/7/transparency.png");
+    margin: 0;
+    padding: 0;
+}
+
+#object{
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    font-size: 32px;
+    color: white;
+    padding: 20px;
+    word-wrap: break-word;
+}
+
+#menu{
+    font-size: 24px;
+    height: 100%;
+    overflow-y: scroll;
+    width: 25%;
+    background-color: #4682B4;
+    position: absolute;
+    right: 0;
+    box-shadow: -3px 0px 10px 0px black;
+}
+
+.panel{
+    text-align: center;
+    width: 100%;
+    background-color: #002849;
+    padding-bottom: 10px;
+}
+
+.panelBody{
+    border-bottom: solid 1px #1c405d;
+    background-color: #4682B4;
+    height: 75px;
+}
+
+.panelBodyTop{
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+#box{
+    position: absolute;
+    left: 0;
+    width: 75%;
+    height: 100%;
+}
+
+.slide{
+    float: left;
+    margin-left: 10%;
+    top: 10px;
+    width: 80%;
+}
+
+

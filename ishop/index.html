@@ -1,0 +1,234 @@
+﻿<html>
+
+<head>
+    <title>Singularity</title>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' href='css/bootstrap.min.css' type='text/css' media='all'>
+    <link rel='stylesheet' href='css/Style.css' type='text/css' media='all'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="info.json"></script>
+</head>
+
+<body>
+    <nav class="navbar-inverse">
+        <div class = "container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse">
+                <ul class = "nav pull-left navbar-nav">
+                    <li><a href = "#"><span>About</span></a></li>
+                    <li><a href = "#"><span>Terms</span></a></li>
+                    <li><a href = "#"><span>Privacy</span></a></li>
+                    <li><a href = "#"><span>Contact</span></a></li>
+					<li><form class="navbar-form" role="search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search">
+                                    </div>
+                                </form></li>
+                </ul>
+                <ul class="nav navbar-nav pull-right">
+                    <li><a href="#" data-target="#Registration" data-toggle="modal"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#" data-target="#Login" data-toggle="modal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id = "Login" class="modal fade">
+        <div class ="modal-dialog">
+            <div class = "modal-content">
+                <div class = "modal-header">
+                    <h1>Login</h1>
+                </div>
+                <div class = "modal-body">
+                    <div class = "form-group">
+                        <label for ="username">Username</label>
+                        <input id = "username" type="text" class = "form-control">
+                    </div>
+                    <div class = "form-group">
+                        <label for ="password">Password</label>
+                        <input id = "password" type="password" class = "form-control">
+                    </div>
+                </div>
+                <div class = "modal-footer">
+                    <button class="btn btn-block">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id = "Registration" class="modal fade">
+        <div class ="modal-dialog">
+            <div class = "modal-content">
+                <div class = "modal-header">
+                    <h1>Sign <up></up></h1>
+                </div>
+                <div class = "modal-body">
+                    <div class = "form-group">
+                        <label for ="usrnm">Username</label>
+                        <input id = "usrnm" type="text" class = "form-control">
+                    </div>
+                    <div class = "form-group">
+                        <label for ="paswrd">Password</label>
+                        <input id = "paswrd" type="password" class = "form-control">
+                    </div>
+                    <div class = "form-group">
+                        <label for ="email">Email</label>
+                        <input id = "email" type="email" class = "form-control">
+                    </div>
+                </div>
+                <div class = "modal-footer">
+                    <button class="btn btn-block">Sign up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id = "content">
+        <div id = "content-body">
+            <div class = "container">
+                <div class = "row">
+                    <div class = "col-lg-11 center-block">
+                        <div class = "row">
+                            <div class = "col-lg-7">
+                                <div id = "content-body-description">
+                                    <div id = "description-header">
+                                        <h1 id = "description-title">Iphone 6</h1>
+                                    </div>
+                                    <div id>
+                                        <h4 id = "description-body">This is Apple like we've never seen before. Apple like we never thought we'll see. To begin with, there's supposed to be no better iPhone than the iPhone 6. That's the sort of thing you'd expect of Apple. Come September every year, the world grabs a bag of popcorn and gets ready to watch Apple's bestest iPhone yet come on stage in all its glory.</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class = "col-lg-4">
+                                <div id = "body-image">
+                                    <img id = "description-image" class = "img-responsive"src = "http://www.freeiconspng.com/uploads/iphone-6-png-background-11.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class = "container" id = "description-footer">
+                <div class = "row">
+                    <div class = "col-lg-12">
+                        <h1>Other products</h1>
+                    </div>
+                    <div class = "col-lg-4">
+                        <div class = "panel panel-default">
+                            <div class = "panel-heading">
+                                <a onclick="change(0)">Samsung OfficServ 7030</a>
+                            </div>
+                            <div class = "panel-body">
+                                <div class = "row">
+                                    <div class = "col-lg-6">
+                                        As part of Samsung’s OfficeServ 7000 range of next generation IP solutions, the OfficeServ 7030 ...
+                                    </div>
+                                    <div class = "col-lg-6">
+                                        <img class="img-responsive" src = "http://meridiancoms.com/wp-content/uploads/2013/10/mobile-phone2.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "col-lg-4">
+                        <div class = "panel panel-default">
+                            <div class = "panel-heading">
+                                <a onclick="change(1)">Samsung Galaxy S4</a>
+                            </div>
+                            <div class = "panel-body">
+                                <div class = "row">
+                                    <div class = "col-lg-6">
+                                        As the Galaxy S counter flips another digit, Samsung has hopes of getting an even...
+                                    </div>
+                                    <div class = "col-lg-6">
+                                        <img class="img-responsive" src = "http://icons.iconarchive.com/icons/jonathan-rey/devices-pack-3/256/Smartphone-Android-Jelly-Bean-Samsung-Galaxy-S4-icon.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "col-lg-4">
+                        <div class = "panel panel-default">
+                            <div class = "panel-heading">
+                                <a onclick="change(2)">Samsung Galaxy S6</a>
+                            </div>
+                            <div class = "panel-body">
+                                <div class = "row">
+                                    <div class = "col-lg-6">
+                                        The Galaxy S6 was redone from scratch and bids farewell to plastic. Glass and metal is a critically acclaimed combination...
+                                    </div>
+                                    <div class = "col-lg-6">
+                                        <img class="img-responsive" src = "http://www.samsung.com/common/next/promotions/galaxys6_edge/images/galaxy-s6-edge_gallery_front_gold.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <section id = "other">
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-lg-6">
+                    <div class = "panel panel-default fixed-panel">
+                        <div class = "panel-heading">
+                            <h3>News</h3>
+                        </div>
+                        <div class = "panel-body">
+                            <div class = "news-body">
+                                <h4><a href = "#">Prime Video introductory offer</a></h4>
+                                Enjoy exclusive Originals, movies, and TV shows for €2.99/month for your first six months. Membership renews at €5.99/month after six months. Cancel anytime.
+                            </div>
+                            <div class = "news-body">
+                                <h4><a href = "#">Download and go</a></h4>
+                                Watch offline on the Prime Video app when you download titles to your iPhone, iPad, Tablet, or Android device.
+                            </div>
+                            <div class = "news-body">
+                                <h4><a href = "#">2017 Fulfillment U.S. fee changes</a></h4>
+                                FBA fees in the U.S. in 2017 will be adjusted to reflect the changing costs of storage, fulfillment, transportation, and customer service. The new rates will not take effect until February 22, 2017, or later. For a complete list of changes
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "col-lg-6">
+                    <div class = "panel panel-default fixed-panel">
+                        <div class = "panel-heading ">
+                            <h3>Twitter</h3>
+                        </div>
+                        <div class = "panel-body">
+                            <blockquote data-lang="ru"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/Overusing?src=hash">#Overusing</a> <a href="https://twitter.com/hashtag/hashtags?src=hash">#hashtags</a> can be <a href="https://twitter.com/hashtag/super?src=hash">#super</a> <a href="https://twitter.com/hashtag/annoying?src=hash">#annoying</a> 😩 Sticking to one or two per Tweet is a good call 😀</p>&mdash; Twitter Support (@Support) <a href="https://twitter.com/Support/status/613308058094039043">23 июня 2015 г.</a></blockquote>
+                            <blockquote data-lang="ru"><p lang="en" dir="ltr">People may have recently experienced a brief issue accessing Twitter. We have resolved the problem and apologize for the inconvenience.</p>&mdash; Twitter Support (@Support) <a href="https://twitter.com/Support/status/829135948281556992">8 февраля 2017 г.</a></blockquote>
+                            <blockquote data-lang="ru"><p lang="en" dir="ltr">Update: We continue to work on the investigation and fix for the <a href="https://twitter.com/POTUS">@POTUS</a> migration. Stay tuned!</p>&mdash; Twitter Support (@Support) <a href="https://twitter.com/Support/status/822793271000776704">21 января 2017 г.</a></blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id = "footer">
+        <div class = "container">
+            <div class = "row center-block text-center">
+                <h4>© 2017 Singularity</h4>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

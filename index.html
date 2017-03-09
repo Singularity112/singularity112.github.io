@@ -1,0 +1,157 @@
+﻿<!doctype html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="script/jquery-3.1.1.min.js"></script>
+    <script src="script/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+</head>
+
+<body ng-app = "myApp" ng-controller = "myController">
+    <div id = "background"></div>
+
+    <header id = "intro">
+        <div class="center">
+            <div id = "logo" class = "bold text-uppercase">Singularity</div>
+            <div id = "under" class = "letter-space">Web-developer</div>
+        </div>
+    </header>
+
+    <section id = "about">
+        <div class = "container">
+
+            <div class = "row padding">
+                <div class = "col-lg-6 center-block">
+                    <h1>About me</h1>
+                    <hr class = "hr">
+                </div>
+            </div>
+
+            <div class = "row paragraph">
+                <div class = "col-md-4 col-md-push-4 anim-top">
+                    <img src = "img/S.png" class="img-circle" style="height: 200px">
+                </div>
+
+                <div class = "col-md-4 col-md-pull-4 text-left anim-bottom">
+                    <h3 class = "text-gray">A few details about myself</h3>
+                    <span class = "paragraph">
+                        Teamwork, transparent communication and formulation of clear objectives.
+                        Self-organization, deadlines, multitasking.
+                    </span>
+
+                    <span class = " glyphicon glyphicon-book text-gray"></span><span class = "text-gray"> Hobbies: reading, traveling, music.</span>
+                    <span class = "text-cat"><br>I have a fluffy cat ;)</span>
+                </div>
+
+                <div class = "col-md-4 text-right anim-bottom">
+                    <h3 class = "text-gray">Personal</h3>
+                    <span class = "paragraph bold text-uppercase letter-space">Dmitry Golubev</span><br>
+                    <span class = "text-gray"></span> <span class = "text-gray">Date of Birth: 21 may 1997</span><br>
+                    <span class = "glyphicon glyphicon-map-marker br">  </span>Ukraine, Dnipro<br>
+                    <span class = "glyphicon glyphicon-phone br"></span> 380999149987
+                </div>
+            </div>
+
+            <div class = "padding"></div>
+        </div>
+    </section>
+
+    <section id = "portfolio">
+        <div class = "container">
+
+            <div class = "row padding">
+                <div class = "col-lg-6 center-block">
+                    <h1 class = "anim-top text-center">Portfolio</h1>
+                    <hr class="hr hr-inverse">
+                </div>
+            </div>
+
+            <div class = "row">
+                <div class = "col-md-6 center-block">
+                    <ul class = "list-inline text-center">
+                        <li ng-repeat = "t in tags"  ng-click = "toggle(t.title); select($index)" ng-class="{active: $index == selected}">{{t.title}}</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class = "row">
+                <div class = "col-lg-4 text-center" ng-repeat = "i in item">
+                    <div ng-if = "i.active == true"><a ng-href = {{i.href}}><img ng-src = {{i.img}} class = "fadein img-responsive center-block" title = {{i.title}}></a></div>
+                    <div ng-if = "i.active != true"><a ng-href = {{i.href}}><img ng-src = {{i.img}} class = "fadeout img-responsive center-block" title = {{i.title}}></a></div>
+                </div>
+            </div>
+        </div>
+        <div class = "padding"></div>
+    </section>
+
+    <section id = "technologies">
+        <div class = "container">
+
+            <div class = "row padding">
+                <div class = "col-lg-6 center-block text-center">
+                    <h1 class = "anim-bottom text-uppercase">technologies</h1>
+                    <hr class = "hr">
+                </div>
+            </div>
+
+            <div class = "row">
+                <div class = "item col-lg-4" ng-repeat = "t in tech">
+                    <div class = "text-center tech-logo">{{t.title}}</div>
+                    <div class = "text-center"> <img ng-src = {{t.img}} class = "tech-image" ></div>
+                </div>
+            </div>
+
+            <div class = "padding"></div>
+        </div>
+    </section>
+
+    <section id = "contact">
+        <div class = "container">
+
+            <div class = "row padding">
+                <div class = "col-lg-6 center-block text-center">
+                    <h1 class = "text-uppercase anim-top">Contact</h1>
+                    <hr class = "hr hr-inverse">
+                </div>
+            </div>
+
+            <div class = "row">
+                <div class = "col-md-6 anim-right">
+                    <form>
+                    <div class = "form-group">
+                            <label for="name">Your name:</label>
+                            <input type="password" class="form-control" id="name" placeholder="Your name">
+                            <span class="help-block">We can be friends ;)</span>
+                            <label for="email">Email:</label>
+                            <input type="password" class="form-control" id="email" placeholder="Your email">
+                            <span class="help-block">This will help me find you</span>
+                            <label for="textarea">Your message</label>
+                            <textarea class="form-control" id="textarea" rows="4"></textarea>
+                            <span class="help-block">Resizable</span>
+                            <button type="submit" class="btn btn-success">Submit</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class = "col-md-6 text-center padding font-big anim-left">
+                    <span class = "glyphicon glyphicon-map-marker"></span>  Ukraine, Dnipro<br>
+                    <span class = "glyphicon glyphicon-phone br"></span>  380999149987<br>
+                    <span class = "glyphicon glyphicon-envelope br"></span>  <span style = "font-size : 20px">Singularity123097@gmail.com</span>
+                </div>
+            </div>
+
+            <div class = "padding"></div>
+        </div>
+    </section>
+
+    <section id = "footer">
+        <div id = "row">
+            <div id = "col-lg-12" class = "padding text-center font-big">
+                Singularity
+            </div>
+        </div>
+    </section>
+
+</body>

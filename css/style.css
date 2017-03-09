@@ -1,0 +1,192 @@
+﻿body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.padding{
+    padding: 40px 0;
+}
+
+.center-block{
+    float: none
+}
+
+.paragraph{
+    padding: 30px 0;
+    display: inline-block;
+}
+
+.text-gray{
+    color: gray;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.letter-space{
+    letter-spacing: 3px;
+}
+
+.br{
+    margin-top: 15px;
+}
+
+
+#background{
+    position: fixed;
+    background-image: url(../img/background.png);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#intro{
+    position: relative;
+    height: 100vh;
+}
+
+#logo{
+    display: none;
+    border: 6px solid white;
+    padding: 10px 35px;
+    font-size: 30px;
+    color: white;
+}
+
+#under{
+    position: relative;
+    top: 100px;
+    display: none;
+    color: white;
+    text-align: center;
+    margin: 20px;
+    text-transform: uppercase;
+}
+
+#about,
+#technologies{
+    position: relative;
+    background: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+.hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, white, black, white);
+}
+
+.hr-inverse{
+    background-image: linear-gradient(to right, Rgb(44,45,39), white, Rgb(44,45,39));
+}
+
+.text-cat{
+    font-size: 10px;
+}
+
+#portfolio,
+#contact{
+    position: relative;
+    width: 100%;
+    background: Rgb(44,45,39);
+    color: white;
+}
+
+#portfolio img{
+    width: 300px;
+    height: 158px;
+    margin-top: 20px;
+}
+
+li{
+    cursor: pointer;
+    color: gray;
+    width: 120px;
+    text-align: center;
+    margin: 0 15px;
+}
+
+.active{
+    color: white;
+    border-bottom:1px solid white;
+    box-sizing: border-box;
+}
+
+.anim-bottom{
+    display: none;
+    position: relative;
+    top: 150px;
+}
+
+
+.anim-top{
+    display: none;
+    position: relative;
+    bottom: 150px;
+}
+
+.anim-left{
+    display: none;
+    position: relative;
+    left: 150px;
+}
+
+.anim-right{
+    display: none;
+    position: relative;
+    right: 150px;
+}
+
+.fadeout{
+    opacity: 0.05;
+}
+
+.fadein{
+    opacity: 1;
+}
+
+.tech-logo{
+    font-size: 24px;
+    line-height: 100px;
+}
+
+.tech-image{
+    height: 200px;
+}
+
+.font-big{
+    font-size: 26px;
+}
+
+#footer{
+    position: relative;
+    background: #939687;
+}
+
+span{
+    text-wrap: normal;
+}
+
+@media screen and (max-width: 1000px){
+    .text-right {
+        text-align: center;
+    }
+    
+    .text-left{
+        text-align: center;
+    }
+}

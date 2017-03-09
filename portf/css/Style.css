@@ -1,0 +1,89 @@
+﻿@media(min-width:767px) {
+
+    .navbar .navbar-brand{
+        font-size: 2em;
+    }
+    .navbar {
+        padding: 20px 0;
+        font-size: 1.5em;
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+    }
+
+
+    .top-nav-collapse {
+        font-size: 1em;
+        padding: 0;
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+    }
+}
+
+body{
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.center-block {float: none !important}
+
+header {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    background-color: lightgray;
+}
+
+hr.gray {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, lightgray, black, lightgray);
+}
+
+hr.white{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, white, black, white);
+}
+
+
+#portfolio{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#portfolio img{
+   height: 200px;
+   width: 320px;
+}
+
+#portfolio .col-lg-4{
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+#portfolio .col-lg-4:hover{
+    background-color: lightgray;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+#contact{
+    background-color: lightgray;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer{
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer img{
+    width: 50px;
+    margin: 20px;
+}
+
+#copyright{
+    padding: 25px;
+    background-color: gray;
+}
