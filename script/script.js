@@ -75,14 +75,14 @@ app.controller('myController',function ($scope) {
         {
             title: "Holdstudio",
             tags: ["Bootstrap", "Javascript"],
-            img: "img/holdstudio.PNG",
+            img: "img/holdstudio.png",
             href: "http://holdstudio.com",
             active: true
         },
         {
             title: "Raysol",
             tags: ["Bootstrap", "Javascript"],
-            img: "img/raysol.PNG",
+            img: "img/raysol.png",
             href: "http://raysol.co.il",
             active: true
         }
