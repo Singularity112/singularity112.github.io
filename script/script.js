@@ -71,6 +71,20 @@ app.controller('myController',function ($scope) {
             img: "img/portf.PNG",
             href: "portf/index.html",
             active: true
+        },
+        {
+            title: "Holdstudio",
+            tags: ["Bootstrap", "Javascript"],
+            img: "img/holdstudio.PNG",
+            href: "http://holdstudio.com",
+            active: true
+        },
+        {
+            title: "Raysol",
+            tags: ["Bootstrap", "Javascript"],
+            img: "img/raysol.PNG",
+            href: "http://raysol.co.il",
+            active: true
         }
     ];
 
