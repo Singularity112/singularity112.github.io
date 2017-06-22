@@ -85,6 +85,20 @@ app.controller('myController',function ($scope) {
             img: "img/raysol.png",
             href: "http://raysol.co.il",
             active: true
+        },
+        {
+            title: "Maamorim",
+            tags: ["Bootstrap", "Javascript"],
+            img: "img/maamorim.png",
+            href: "http://www.maamorim.com",
+            active: true
+        },
+        {
+            title: "Spacegarden",
+            tags: ["Bootstrap", "Javascript"],
+            img: "img/spacegarden.png",
+            href: "http://spacegarden.com.ua",
+            active: true
         }
     ];
 
