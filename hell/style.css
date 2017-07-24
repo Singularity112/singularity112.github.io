@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+#sins{
+    display: flex;
+    justify-content: space-between;
+}
+
+#title{
+    text-align: center;
+    font-size: 54px;
+}
+
+#sins{
+    background: gray;
+}
+
+#result{
+    text-align: center;
+    font-size :52px;
+}
