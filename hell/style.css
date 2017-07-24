@@ -13,11 +13,35 @@ body{
     font-size: 54px;
 }
 
-#sins{
-    background: gray;
-}
-
 #result{
     text-align: center;
     font-size :52px;
+}
+
+#donutchart{
+    width: 1000px;
+    height: 500px;
+}
+
+
+#donutchart2{
+    width: 1000px;
+    height: 500px;
+}
+
+@media screen and (max-width: 1000px){
+    #sins{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #donutchart{
+        width: 100%;
+        height: 500px;
+    }
+
+    #donutchart2{
+        width: 100%;
+        height: 500px;
+    }
 }
