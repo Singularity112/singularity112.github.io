@@ -23,6 +23,7 @@ body{
     padding-top: 68px;
     padding-bottom: 68px;
     overflow: hidden;
+    position: relative;
     max-height: 750px;
 }
 
@@ -53,8 +54,12 @@ body{
 }
 
 .side img{
+    max-height: 537px;
     height: auto;
+    overflow: hidden;
     width: 1000px;
+    object-fit: cover;
+    object-position: 0 0;
 }
 
 .description span{
