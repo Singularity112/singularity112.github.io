@@ -71,7 +71,7 @@ body{
 }
 
 .col-center{
-    height: 650px;
+    height: 580px;
     display: flex;
     flex-direction: column;
     justify-content: center;
