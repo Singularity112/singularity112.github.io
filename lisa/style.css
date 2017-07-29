@@ -204,4 +204,8 @@ body{
         margin-top: 20px;
     }
 
+    .description span{
+        display: block;
+        margin-top: 50px;
+    }
 }
