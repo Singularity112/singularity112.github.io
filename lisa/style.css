@@ -13,10 +13,6 @@ body{
     background: #faf9f7;
 }
 
-.side{
-    width: 50%;
-}
-
 .row{
     display: flex;
     flex-direction: row;
@@ -102,6 +98,35 @@ body{
     opacity: 0.5;
 }
 
-.show{
+@media screen and (max-width: 800px){
+    .row{
+        flex-direction: column;
+    }
 
+    .side{
+        width: 100%;
+    }
+
+    body{
+        text-align: center;
+    }
+
+    .description{
+        padding: 0;
+        margin-left: 0;
+    }
+
+    .side img{
+        max-width: 320px;
+        max-height: 320px;
+        min-width: 0;
+    }
+
+    .col-center{
+        height: auto;
+    }
+
+        body .side:first-of-type{
+            padding: 0;
+        }
 }
