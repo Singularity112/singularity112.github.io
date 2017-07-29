@@ -103,6 +103,10 @@ body{
     opacity: 0.5;
 }
 
+.description a{
+    color: black;
+}
+
 @media screen and (max-width: 800px){
     .row{
         flex-direction: column;
