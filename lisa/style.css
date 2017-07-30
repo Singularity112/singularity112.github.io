@@ -148,6 +148,25 @@ body{
     opacity: 0.6;
 }
 
+.product_main{
+    font-size: 38px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.header-title{
+    margin: 60px auto;
+    font-size: 52px;
+    text-align: center;
+}
+
+.product-body{
+    background: #faf9f7;
+}
+
+.product-img{
+    object-fit: contain !important;
+}
 
 
 @media screen and (max-width: 800px){
