@@ -268,6 +268,14 @@ body{
     font-size: 20px;
 }
 
+.product-body .description{
+    margin-left: 40px;
+}
+
+.product-body .reverse .description{
+    margin-left: 200px;
+}
+
 @media screen and (max-width: 800px){
     .row{
         flex-direction: column;
@@ -373,5 +381,9 @@ body{
     .reverse{
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    .product-body .reverse .description{
+        margin-left: 40px;
     }
 }
