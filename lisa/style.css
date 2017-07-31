@@ -227,4 +227,8 @@ body{
         display: block;
         margin-top: 50px;
     }
+
+    .header-title{
+        font-size: 42px;
+    }
 }
