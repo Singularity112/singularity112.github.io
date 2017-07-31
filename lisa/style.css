@@ -219,7 +219,7 @@ body{
 .phone::after {
     content: '';
     position: absolute;
-    bottom: 18px;
+    bottom: 12px;
     left: 50%;
     transform: translateX(-50%);
     width: 39px;
@@ -277,7 +277,7 @@ body{
 }
 
 .product-body .col-center{
-    height: 468px;
+    min-height: 468px;
 }
 
 ul{
@@ -400,5 +400,18 @@ ul{
 
     .product-body .reverse .description{
         margin-left: 40px;
+    }
+
+    .product-body .description{
+        margin-left: 0;
+    }
+
+    .product-body .col-center{
+        max-height: 468px;
+        min-height: 100px;
+    }
+
+    .img-slider{
+        margin-top: 20px;
     }
 }
