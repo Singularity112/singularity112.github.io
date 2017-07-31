@@ -168,6 +168,105 @@ body{
     object-fit: contain !important;
 }
 
+.tablet{
+    padding: 60px 80px;
+    border-radius: 55px;
+    box-shadow: 0 4px 14px 0 rgba(0,0,0,.14);
+    position: relative;
+    background: #fff;
+    margin: 0 auto;
+    max-width: 65%;
+}
+
+.tablet img{
+    width: 100%;
+    border: 1px solid #e5e5e8;
+}
+
+.tablet:after{
+    right: 40px;
+    -webkit-transform: translate(50%,-50%);
+    transform: translate(50%,-50%);
+    width: 24px;
+    height: 24px;
+    border: 3px solid #d2d2dc;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    content: '';
+}
+.tablet:before{
+    left: 40px;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    border: 5px solid #d2d2dc;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    content: '';
+}
+
+.phone{
+    padding: 66px 16px;
+    border-radius: 44px;
+    box-shadow: 0 5px 17px 0 rgba(0,0,0,.14);
+    position: relative;
+    background: white;
+    width: 300px;
+    margin: auto;
+}
+
+.phone::after {
+    content: '';
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 39px;
+    height: 39px;
+    border: 2px solid #d2d2dc;
+    border-radius: 50%;
+}
+
+.phone__top {
+    position: absolute;
+    top: 33px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 44px;
+    height: 4px;
+    background: #d8d7d5;
+    border-radius: 6px;
+}
+
+.phone__top::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -18px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border: 3px solid #d2d2dc;
+    border-radius: 50%;
+}
+
+.phone__top::after {
+    content: '';
+    position: absolute;
+    left: -22px;
+    top: -2px;
+    border: 4px solid #d2d2dc;
+    border-radius: 50%;
+}
+
+.product-body{
+    line-height: 1.8;
+}
+
+.product-body .bold,
+.product-body ul{
+    font-size: 20px;
+}
 
 @media screen and (max-width: 800px){
     .row{
@@ -238,5 +337,41 @@ body{
 
     .product-body .bold{
         text-align: left;
+    }
+
+    .tablet{
+        padding: 30px 40px;
+        border-radius: 33px;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .tablet:before{
+        left: 20px;
+    }
+
+    .tablet:after{
+        right: 20px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .img-slider{
+        max-height: 700px;
+    }
+
+    .phone{
+        height: 320px;
+        width: 220px;
+    }
+
+    .phone img{
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    .reverse{
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
