@@ -231,4 +231,12 @@ body{
     .header-title{
         font-size: 42px;
     }
+
+    ul{
+        text-align: left;
+    }
+
+    .product-body .bold{
+        text-align: left;
+    }
 }
