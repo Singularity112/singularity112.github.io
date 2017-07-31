@@ -277,8 +277,9 @@ body{
 }
 
 .product-body .col-center{
-    min-height: 468px;
+    height: 659px;
 }
+
 
 ul{
     line-height: 1.8;
@@ -413,5 +414,42 @@ ul{
 
     .img-slider{
         margin-top: 20px;
+    }
+}
+
+/* LAPTOP FIX*/
+
+@media screen and (max-width: 1026px){
+    #everlasting .col-center,
+    #promouter .col-center{
+        height: 371px !important;
+    }
+}
+
+@media screen and (max-width: 1366px) and (min-width: 1030px){
+    #everlasting .col-center,
+    #promouter .col-center{
+        height: 455px !important;
+    }
+}
+
+@media screen and (max-width: 1445px)and (min-width: 1370px){
+    #everlasting .col-center,
+    #promouter .col-center{
+        height: 473px !important;
+    }
+}
+
+@media screen and (max-width: 1602px) and (min-width: 1500px){
+    #everlasting .col-center,
+    #promouter .col-center{
+        height: 512px !important;
+    }
+}
+
+@media screen and (max-width: 1690px)and (min-width: 1620px){
+    #everlasting .col-center,
+    #promouter .col-center{
+        height: 531px !important;
     }
 }
