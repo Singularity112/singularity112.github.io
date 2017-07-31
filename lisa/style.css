@@ -287,6 +287,10 @@ ul{
 	padding-left: 20px;
 }
 
+#help .col-center{
+    height: 669px;
+}
+
 @media screen and (max-width: 800px){
     .row{
         flex-direction: column;
