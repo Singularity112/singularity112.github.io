@@ -276,6 +276,16 @@ body{
     margin-left: 200px;
 }
 
+.product-body .col-center{
+    height: 468px;
+}
+
+ul{
+    line-height: 1.8;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
 @media screen and (max-width: 800px){
     .row{
         flex-direction: column;
