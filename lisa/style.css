@@ -284,6 +284,7 @@ ul{
     line-height: 1.8;
     margin-top: 15px;
     margin-bottom: 0;
+	padding-left: 20px;
 }
 
 @media screen and (max-width: 800px){
