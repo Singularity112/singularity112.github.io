@@ -120,7 +120,6 @@ body{
 }
 
 .product_img{
-    width: 350px;
     height: 220px;
     background: #fbfaf8 ;
 }
@@ -133,6 +132,7 @@ body{
 .product_title{
     font-size: 20px;
     font-weight: bold;
+    margin-top: 35px;
 }
 
 .product_desc{
