@@ -38,10 +38,11 @@ button{
     font-size: 24px;
 }
 
-input:focus{
+input:focus, button:focus{
     outline: none;
+    box-shadow: 0 0 10px  lightgray;
 }
 
-button:focus{
-    outline: none;
+button:hover{
+    box-shadow: 0 0 10px  lightgray;
 }
