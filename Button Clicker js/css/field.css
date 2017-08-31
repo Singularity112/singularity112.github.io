@@ -1,0 +1,49 @@
+#field{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#monster_name{
+    width: 90%;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#health{
+    width: 90%;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 33px;
+    text-align: center;
+    position: relative;
+
+    /* Разные браузеры */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+#monster{
+    height: 150px;
+    width: 150px;
+    background: red;
+    border-radius: 20px;
+    opacity: 1;
+}
+
+.field_margin{
+    margin: 20px 0;
+}
+
+#health_bar{
+    position: absolute;
+    z-index: -100;
+    width: 100%;
+    background: red;
+    height: 100%;
+    border-radius: 10px;
+    top: 0;
+}
