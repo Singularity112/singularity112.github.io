@@ -5,20 +5,62 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link href = "css/main.css" rel = "stylesheet">
     <link href = "css/field.css" rel = "stylesheet">
+    <link href = "css/stat.css" rel = "stylesheet">
+    <link href = "css/upgrade.css" rel = "stylesheet">
+    <link href = "css/font-awesome.min.css" rel = "stylesheet">
     <!-- js -->
     <script src = "js/jquery-3.2.1.min.js"></script>
     <script src = "js/field.js"></script>
+    <script src = "js/upgrade.js"></script>
 </head>
 
 <body>
     <div id = "container">
 
         <div id = "upgrade" class = "block">
-            Вот здесь Upgrade
+            <div class = "upgrade_item up_damage">
+                <div class = "upgrade_stat">
+                    + <span class = "up_d">1</span> <i class = "fa fa-gavel"></i>
+                </div>
+                <span class = "upgrade_life">
+                    <span class = "up_l">5</span>
+                    <i class = "fa fa-heart"></i>
+                </span>
+                <span class = "upgrade_cost">
+                    <span class = "up_c">5</span>
+                    <i class = "fa fa-money"></i>
+                </span>
+            </div>
+
+            <div class = "upgrade_item up_damage">
+                <div class = "upgrade_stat">
+                    + <span class = "up_d">5</span> <i class = "fa fa-gavel"></i>
+                </div>
+                <span class = "upgrade_life">
+                    <span class = "up_l">15</span>
+                    <i class = "fa fa-heart"></i>
+                </span>
+                <span class = "upgrade_cost">
+                    <span class = "up_c">100</span> <i class = "fa fa-money"></i>
+                </span>
+            </div>
+
+            <div class = "upgrade_item up_damage">
+                <div class = "upgrade_stat">
+                    + <span class = "up_d">20</span> <i class = "fa fa-gavel"></i>
+                </div>
+                <span class = "upgrade_life">
+                    <span class = "up_l">25</span>
+                    <i class = "fa fa-heart"></i>
+                </span>
+                <span class = "upgrade_cost">
+                    <span class = "up_c">1000</span> <i class = "fa fa-money"></i>
+                </span>
+            </div>
         </div>
 
         <div id = "field" class = "block">
-            <div id = "monster_name" class = "field_margin"><span id = "monster_color"></span> <span id = "monster_form"></span> <span id = "monster_level">1</span> lvl</div>
+            <div id = "monster_name" class = "field_margin"><span id = "monster_color"></span> <span id = "monster_form"></span></div>
             <div id = "monster"></div>
             <div id = "health" class = "field_margin">
                 <span id = "current_health">1</span>/<span id = "max_health">1</span>
@@ -27,7 +69,18 @@
         </div>
 
         <div id = "stat" class = "block">
-            Вот здесь Stat
+            <div class = "stat_item">
+                <i class = "fa fa-money" title = "Деньги"></i> <span id = "stat_money"> 0 </span>
+            </div>
+            <div class = "stat_item">
+                <i class = "fa fa-optin-monster" title = "Убито монстров"></i> <span id = "stat_monster"> 0 </span>
+            </div>
+            <div class = "stat_item">
+                <i class = "fa fa-gavel" title = "Урон"></i> <span id = "stat_damage"> 1 </span>
+            </div>
+            <div class = "stat_item">
+                <i class = "fa fa-forward" title = "Множитель денег"></i> <span id = "stat_factor"> 0 </span>
+            </div>
         </div>
 
     </div>

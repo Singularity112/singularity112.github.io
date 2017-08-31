@@ -1,0 +1,21 @@
+.stat_item{
+    margin: 20px;
+    text-align: center;
+    font-size: 32px;
+}
+
+.fa-money{
+    color: green;
+}
+
+.fa-optin-monster{
+    color: yellow;
+}
+
+.fa-gavel{
+    color: red;
+}
+
+.fa-forward{
+    color: blue;
+}

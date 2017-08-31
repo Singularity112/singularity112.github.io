@@ -4,6 +4,8 @@ body{
     font-family: 'Open Sans', sans-serif;
     color: white;
     font-size: 24px;
+    -moz-user-select: none;
+    user-select: none;
 }
 
 #container{

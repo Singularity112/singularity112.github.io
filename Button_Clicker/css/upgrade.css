@@ -1,0 +1,21 @@
+.upgrade_item{
+    width: 90%;
+    border-radius: 20px;
+    margin: 20px;
+    border: 2px solid white;
+    text-align: center;
+    font-size: 32px;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.upgrade_item > .upgrade_stat,
+.upgrade_item > .upgrade_cost,
+.upgrade_item > .upgrade_life{
+    margin: 5px 10px;
+}
+
+.fa-heart{
+    color: red;
+}
