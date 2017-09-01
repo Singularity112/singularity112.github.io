@@ -10,6 +10,7 @@ var damage = 1;
 var factor = 1;
 var trophy = 0;
 var health_modifier = 5;
+max_added_health = 3;
 var upgrades;
 var upgrades_lifes = [];
 

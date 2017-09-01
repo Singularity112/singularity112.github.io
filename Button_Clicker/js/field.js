@@ -12,30 +12,36 @@ function createMonster() {
     $('#monster_form').text(forms_name[f]);
     $('#monster_color').text(colors_name[c]).css({'color': colors[c]});
 
-    max_added_health = 3;
-    max_health = (level*health_modifier) + getRandomInt(0,3);
 
-    if (level > 30 && level < 71){
-        health_modifier = 15;
-        max_added_health = 30;
+    if (level < 31){
+        health_modifier = 5*(trophy + 1);
+        max_added_health = 3*(trophy+1);
+    }
+    else if (level > 30 && level < 71){
+        health_modifier = 15 *(trophy+1);
+        max_added_health = 30 *(trophy+1);
     }
     else if (level > 70 && level < 251){
-        health_modifier = 35;
-        max_added_health = 100;
+        health_modifier = 35 *(trophy+1);
+        max_added_health = 200 *(trophy+1);
     }
     else if (level > 250 && level < 501){
-        health_modifier = 200;
-        max_added_health = 10000;
+        health_modifier = 200 *(trophy+1);
+        max_added_health = 10000 *(trophy+1);
     }
     else if ( level > 500 && level < 1000){
-        health_modifier = 320
+        health_modifier = 400 *(trophy+1);
+        max_added_health = 20000;
     }
     else if ( level > 999){
-        health_modifier = 500;
+        health_modifier = 500 *(trophy+1);
+        max_added_health = 40000;
     }
 
+    max_health = (level*health_modifier) + getRandomInt(0,max_added_health);
+
     if (level > 600){
-        ('#trophy').css({'display' : block});
+        $('#trophy').css({'display' : 'block'});
     }
 
     monster_max_health = max_health
