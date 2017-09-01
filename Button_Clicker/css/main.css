@@ -28,6 +28,46 @@ body{
     box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
+#upgrade,
+#stat{
+    overflow-y: scroll;
+}
+
+#upgrade::-webkit-scrollbar,
+#stat::-webkit-scrollbar{
+    width: 0;
+}
+
+#dialog{
+    width: 700px;
+    height: 400px;
+    background: gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#dialog_yes{
+    background: green;
+}
+
+#dialog_no{
+    background: red;
+}
+
+.dialog_button{
+    width: 200px;
+    padding: 15px;
+    margin: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 1366px){
     .block{
         width: 340px;

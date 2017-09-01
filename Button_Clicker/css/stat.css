@@ -19,3 +19,17 @@
 .fa-forward{
     color: blue;
 }
+
+#trophy{
+    width: 90%;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: 20px 5%;
+    cursor: pointer;
+    display: none;
+}
+
+.fa-trophy{
+    padding: 5px;
+    color: yellow;
+}

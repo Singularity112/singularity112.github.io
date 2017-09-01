@@ -1,19 +1,3 @@
-// Monster stat
-var monster_name;
-var monster_current_health;
-var monster_max_health;
-
-// Player stat
-var level = 1;
-var money = 0;
-var damage = 1;
-var factor = 1;
-var health_modifier = 5;
-
-function createGame(){
-    createMonster();
-}
-
 function createMonster() {
     updateStat();
     var colors = ['#f44336','#45b475','#3f31c8','#c8c131','#9c27b0']; // red, green, blue, yellow, purple
@@ -28,13 +12,30 @@ function createMonster() {
     $('#monster_form').text(forms_name[f]);
     $('#monster_color').text(colors_name[c]).css({'color': colors[c]});
 
-    max_health = level*health_modifier;
+    max_added_health = 3;
+    max_health = (level*health_modifier) + getRandomInt(0,3);
 
-    if (level > 30 && level < 70){
-        health_modifier = 20;
+    if (level > 30 && level < 71){
+        health_modifier = 15;
+        max_added_health = 30;
     }
-    else if (level > 69){
-        health_modifier = 50;
+    else if (level > 70 && level < 251){
+        health_modifier = 35;
+        max_added_health = 100;
+    }
+    else if (level > 250 && level < 501){
+        health_modifier = 200;
+        max_added_health = 10000;
+    }
+    else if ( level > 500 && level < 1000){
+        health_modifier = 320
+    }
+    else if ( level > 999){
+        health_modifier = 500;
+    }
+
+    if (level > 600){
+        ('#trophy').css({'display' : block});
     }
 
     monster_max_health = max_health
@@ -46,12 +47,8 @@ function createMonster() {
     $('#health_bar').css({'width': '100%', 'background': colors[c]});
 }
 
-function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
 function takeDamage() {
-    monster_current_health -= damage;
+    monster_current_health -= damage*factor;
 
     if (monster_current_health < 1){
         nextLevel();
@@ -62,33 +59,3 @@ function takeDamage() {
     $('#health_bar').css({'width': (monster_current_health/monster_max_health)*100 + '%'});
 }
 
-function updateStat() {
-    $('#stat_money').text(money);
-    $('#stat_monster').text(level);
-    $('#stat_damage').text(damage);
-    $('#stat_factor').text(factor);
-}
-
-function nextLevel() {
-    level++;
-    money+= level * factor;
-    createMonster();
-}
-
-function Damage() {
-
-}
-
-$(document).ready( function () {
-    createGame();
-
-    $('#monster').on('click',function (e) {
-        takeDamage();
-        var d = $('<div></div>').text(damage);
-        $(d).addClass('damage');
-        $(d).css({'top': e.pageY-15 , 'left' : e.pageX+15});
-        $('body').append(d);
-        $(d).fadeOut(500);
-    });
-
-});
