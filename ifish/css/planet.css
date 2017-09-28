@@ -1,0 +1,22 @@
+﻿#planet{
+    margin-top: 201px;
+}
+
+.planet-buttons{
+    margin-top: 50px;
+}
+
+#planet button{
+    width: 200px;
+    height: 55px;
+    border: 3px solid #00888d;
+    background: #f1f1f1;
+    border-radius: 50px;
+    margin: 0 20px;
+}
+
+.planet-container{
+    width: 920px;
+    margin: auto;
+    margin-top: 70px;
+}

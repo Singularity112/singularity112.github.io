@@ -1,0 +1,28 @@
+﻿@font-face{
+    font-family: Neue_bold;
+    src: url("../fonts/Neue_bold.ttf");
+    font-weight: bold;
+}
+
+@font-face{
+    font-family: sfui_light;
+    src: url("../fonts/sfui_light.otf");
+}
+
+.neue_bold{
+    font-family: Neue_bold !important;
+}
+
+.sfui-light{
+    font-family: sfui_light !important;
+}
+
+.lato{
+    font-family: 'Lato' !important;
+}
+
+.century-gothic-bold{
+    font-family: "Century Gothic";
+    font-weight: bold;
+}
+

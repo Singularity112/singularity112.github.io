@@ -1,0 +1,37 @@
+﻿#columns{
+    margin-top: 170px;
+}
+
+.column-title{
+    font-size: 25px;
+    line-height: 1.4;
+}
+
+.column-desc{
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+#columns .button.learn-more{
+    margin-top: 25px;
+}
+
+#columns-col{
+    margin-top: 70px;
+}
+
+.column-padding-none{
+    padding: 0;
+}
+
+.column-float-right{
+    float: right;
+}
+
+.col-item{
+    margin-top: 10px;
+}
+
+#columns .button{
+    margin-top: 50px;
+}

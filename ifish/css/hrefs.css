@@ -1,0 +1,23 @@
+﻿#hrefs{
+    margin-top: 100px;
+}
+
+.href-item{
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.social-round{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: 4px solid #00888d;
+}
+
+.social{
+    margin-top: 30px;
+}
+
+.social-item{
+    margin: 0 14px;
+}

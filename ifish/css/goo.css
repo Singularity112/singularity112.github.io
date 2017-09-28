@@ -1,0 +1,14 @@
+﻿#goo{
+    margin-top: 115px;
+    background: url("../img/goo.png");
+    width: 1170px;
+    height: 514px;
+}
+
+.goo_cont{
+    max-width: 75%;
+}
+
+#goo button{
+    margin-top: 50px;
+}

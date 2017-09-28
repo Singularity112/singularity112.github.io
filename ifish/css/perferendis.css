@@ -1,0 +1,27 @@
+﻿#perferendis{
+    margin-top: 160px;
+}
+
+.pf-title{
+    font-size: 25px;
+}
+
+.pf-desc{
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+#perferendis button{
+    margin-top: 15px;
+}
+
+#perferendis img{
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+}
+
+.perferendis{
+    margin-top: 45px;
+}

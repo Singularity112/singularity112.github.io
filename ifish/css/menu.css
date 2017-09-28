@@ -1,0 +1,91 @@
+﻿#menu{
+    width: 460px;
+    background: transparent;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 15px;
+    z-index: 10;
+    padding: 0 20px;
+}
+
+.menu-hr{
+    width: 100%;
+    height: 1px;
+    background: #818181;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.menu-background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: -10;
+    opacity: 0.8;
+}
+
+.menu-relative{
+    position: relative;
+}
+
+.menu-items{
+    padding-left: 15px;
+}
+
+.menu-item{
+    text-align: left;
+    padding: 4px 0;
+}
+
+.menu-item a{
+    color: #00888d;
+    font-size: 20px;
+}
+
+.menu-close{
+    position: absolute;
+    right: 6px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.menu-adress{
+    padding-left: 15px;
+}
+
+.menu-adress-item{
+    margin-top: 20px;
+    text-align: left;
+}
+
+.menu-adress-title{
+    font-size: 14px;
+}
+
+.menu-adress-descr{
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.menu-round{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 3px solid #00888d;
+}
+
+.menu-round img{
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.menu-social{
+    margin-top: 20px;
+}
+
+.menu-s-item{
+    margin-left: 15px;
+}

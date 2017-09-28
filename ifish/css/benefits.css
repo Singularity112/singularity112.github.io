@@ -1,0 +1,32 @@
+﻿#benefits{
+    margin-top: 165px;
+}
+
+.benefit-round{
+    width: 155px;
+    height: 155px;
+    border-radius: 100%;
+    border: 10px solid #00888d;
+}
+
+#benefit-img{
+    margin-top: 63px;
+}
+
+.benefit-title{
+    line-height: 1.4;
+    margin-top: 15px;
+    font-size: 16px;
+    max-width: 200px;
+    text-transform: uppercase;
+}
+
+.benefit-desc{
+    margin-top: 10px;
+    max-width: 200px;
+    font-size: 12px;
+}
+
+.benefit-3{
+    margin-left: 10px;
+}

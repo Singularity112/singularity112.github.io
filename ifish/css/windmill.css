@@ -1,0 +1,42 @@
+﻿#windmill{
+    margin-top: 160px;
+}
+
+.windmill-title{
+    font-size: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.windmill-title::after{
+    content:"";
+    position: absolute;
+    border-top: 1px solid #6cd0d4;
+    left: 0; right: 0; bottom: 0;
+    width: 70%;
+}
+
+.windmill-desc{
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.windmill-href{
+    margin-top: 10px;
+}
+
+#windmill a{
+    color: #1f49fe;
+    text-decoration: underline;
+}
+
+.windmills{
+    margin-top: 60px;
+}
+
+#windmill .benefit-round{
+    width: 135px;
+    height: 135px;
+    border: 7px solid #00888d;
+}

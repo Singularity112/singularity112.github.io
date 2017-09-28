@@ -1,0 +1,67 @@
+﻿header{
+    margin-top: 47px !important;
+}
+
+header  .logo{
+    font-size: 50px;
+}
+
+header .tagline{
+    font-size: 18px;
+    letter-spacing: 4px;
+}
+
+.header-cont{
+    width: 1070px;
+    margin: auto;
+}
+
+#header-title{
+    margin-top: 92px;
+}
+
+.header-title-text{
+    font-size: 50px;
+    position: relative;
+}
+
+.header-title-text::before{
+    content:"";
+    position: absolute;
+    border-top: 7px solid #65ca58;
+    top: -15px; left: 2px; right: 0; bottom: 0;
+    width: 67px;
+}
+
+.header-title-descr{
+    margin-top: 30px;
+    line-height: 1.6;
+    font-size: 19px;
+}
+
+.desrc-margin{
+    height: 18px;
+    content: '';
+}
+
+#header-title .button{
+    margin-top: 54px;
+}
+
+.header-round{
+    content: '';
+    width: 10px;
+    height: 10px;
+    margin: -4px 2px;
+    border-radius: 100%;
+    background: #00888d;
+}
+
+.header-round.active{
+    background: #6cd0d4;
+}
+
+.hamburger{
+    position: relative;
+    cursor: pointer;
+}
