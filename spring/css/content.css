@@ -1,0 +1,18 @@
+﻿#content{
+    display: flex;
+    border-bottom: 1px dotted #d5d5d5;
+}
+
+.right-column{
+    width: 750px;
+    border-left: 1px dotted #d5d5d5;
+    box-sizing: border-box;
+}
+
+.rc-margin{
+    height: 1px;
+    background: transparent;
+    margin-top: 25px;
+}
+
+

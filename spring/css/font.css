@@ -1,0 +1,35 @@
+﻿@font-face {
+    font-family: league-gothic;
+    src: url('../font/LeagueGothic-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: league-gothic;
+    src: url('../font/LeagueGothic-Italic.otf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+.text-lightblue{
+    color: #22aaec;
+}
+
+.text-blue{
+    color: #076e9f;
+}
+
+.gothic-regular{
+    font-family: league-gothic, sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.italic{
+    font-style: italic;
+}
