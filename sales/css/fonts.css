@@ -1,0 +1,17 @@
+﻿@font-face{
+    src: url('../fonts/Belladona.ttf');
+    font-family: 'belladona';
+    font-weight: normal;
+}
+
+.arial{
+    font-family: Arial, sans-serif;
+}
+
+.belladona{
+    font-family: 'belladona', sans-serif;
+}
+
+.roboto-regular{
+    font-family: 'Roboto', sans-serif;
+}

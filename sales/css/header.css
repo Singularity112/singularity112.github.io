@@ -1,0 +1,62 @@
+﻿.nav-menu a{
+    color: #252525;
+    text-decoration: none;
+    border-left:1px solid #252525;
+    padding:0 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.nav-menu{
+    margin: 20px auto;
+}
+
+.nav-menu i{
+    margin: 0 5px;
+}
+
+.nav-menu a:first-child {
+    border:none;
+}
+
+.water{
+    background-size: contain;
+    max-width: 1810px;
+    margin: auto;
+    height: 575px;
+    background: url(../img/water.png);
+    background-repeat: no-repeat;
+}
+
+.water .fa{
+    margin: 0 15px;
+    cursor: pointer;
+    font-size: 100px;
+    color: white;
+}
+
+.rounds{
+    margin-bottom: 25px;
+}
+
+.water .fa-circle,
+.water .fa-circle-o{
+    font-size: 24px;
+}
+
+@media screen and (max-width: 1100px){
+    .nav-menu{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-menu a{
+        display: inline-block;
+        border: none;
+    }
+
+    .water{
+        height: 400px;
+        width: 100%;
+    }
+}

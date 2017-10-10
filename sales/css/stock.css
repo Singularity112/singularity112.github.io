@@ -1,0 +1,9 @@
+﻿.stock .popular-best{
+    background: red !important;
+}
+
+.through{
+    color: #898989;
+    font-size: 14px;
+    text-decoration: line-through;
+}

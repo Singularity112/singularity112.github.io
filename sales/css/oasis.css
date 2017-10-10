@@ -1,0 +1,24 @@
+﻿.oasis{
+    max-width: 1810px !important;
+    margin: auto;
+    color: #898989;
+}
+
+.oasis div {
+    padding: 0 15px;
+    margin-top: 5px;
+}
+
+.oasis-big{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.oasis-md{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.oasis-margin{
+    margin-top: 30px !important;
+}
