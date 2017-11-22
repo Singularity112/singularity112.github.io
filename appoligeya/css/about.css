@@ -1,0 +1,38 @@
+#about{
+    background: url("../img/notebook.png") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.about-container{
+    max-width: 900px;
+    margin: auto;
+    font-size: 18px;
+}
+
+.about-title{
+    font-size: 32px;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+#about i{
+    margin: 0 10px;
+}
+
+.about-hr-first{
+    width: 100px;
+    height: 1px;
+    background: #49BF73;
+    margin: 10px auto;
+}
+
+.about-hr-second{
+    width: 70px;
+    height: 1px;
+    background: #409c59;
+    margin: 10px auto;
+}

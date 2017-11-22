@@ -1,0 +1,29 @@
+#main{
+    height: 100vh;
+
+    background: rgba(0,0,0,0.5);
+    color: white;
+}
+
+.logo-title{
+    font-size: 52px;
+    letter-spacing: 3px;
+}
+
+.logo-desc{
+    font-size: 32px;
+}
+
+.logo-btn{
+    margin-top: 30px;
+    font-size: 25px;
+    padding: 10px 50px;
+    border: 2px solid #49BF73;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    letter-spacing: 3px;
+}
+
+.logo-btn:hover{
+    margin-top: 15px;
+}
