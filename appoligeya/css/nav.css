@@ -4,8 +4,17 @@ nav{
     color: white;
     font-size: 30px;
     width: 100%;
-    transition-duration: 0.8s;
+    transition: all 0.3s ease;
     z-index: 999;
+}
+
+.logo{
+    padding: 10px;
+}
+
+.logo img{
+    height: 64px;
+    width: 64px;
 }
 
 .nav-item{
@@ -20,8 +29,4 @@ nav{
 
 .dark-navbar{
     background: black;
-}
-
-.dark-navbar .nav-item{
-    padding: 20px;
 }
