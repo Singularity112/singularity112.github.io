@@ -17,9 +17,7 @@ $(document).ready(function () {
     $(document).scroll(function () {
         s_top = $("body").scrollTop();
         service = $("#services").offset().top;
-        about = $('#about').offset().top;
-        portfolio = $('#portfolio').offset().top;
-        if(s_top > service - 50 && s_top < about -50){
+        if(s_top > service - 50){
             $('nav').addClass('dark-navbar');
         }
         else {
