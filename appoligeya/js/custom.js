@@ -26,5 +26,7 @@ $(document).ready(function () {
 
     });
 
-    $('.loading').hide();
+    setTimeout(function () {
+        $('.loading').hide();
+    }, 1000);
 });
