@@ -22,12 +22,6 @@ $(document).ready(function () {
         if(s_top > service - 50 && s_top < about -50){
             $('nav').addClass('dark-navbar');
         }
-        else if (s_top > about - 50 && s_top < portfolio){
-            $('nav').removeClass('dark-navbar');
-        }
-        else if (s_top > portfolio - 50){
-            $('nav').addClass('dark-navbar');
-        }
         else {
             $('nav').removeClass('dark-navbar');
         }
