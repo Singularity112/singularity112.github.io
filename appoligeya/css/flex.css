@@ -2,12 +2,12 @@
     display: flex;
 }
 
-.flex-col{
-    flex-direction: column;
+.jc-around{
+    justify-content: space-around;
 }
 
-.flex-row{
-    flex-direction: row;
+.jc-between{
+    justify-content: space-between;
 }
 
 .ai-center{
@@ -18,14 +18,42 @@
     justify-content: center;
 }
 
-.jc-between{
-    justify-content: space-between;
+.flex-row{
+    flex-direction: row;
 }
 
-.jc-around{
-    justify-content: space-around;
+.flex-col{
+    flex-direction: column;
 }
 
 .flex-wrap{
     flex-wrap: wrap;
+}
+
+.as-end{
+    align-self: flex-end;
+}
+
+.as-start{
+    align-self: flex-start;
+}
+
+.ai-end{
+    align-items: flex-end;
+}
+
+.ai-start{
+    align-items: flex-start;
+}
+
+.as-center{
+    align-self: center;
+}
+
+.as-stretch{
+    align-self: stretch;
+}
+
+.ml-auto{
+    margin-left: auto;
 }

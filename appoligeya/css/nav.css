@@ -2,43 +2,25 @@ nav{
     position: fixed;
     top: 0;
     color: white;
+    font-size: 30px;
     width: 100%;
-    transition: all 0.8s ease;
-}
-
-.logo{
-    font-family: 'Allura', cursive;
-    font-size: 32px;
-    padding: 25px;
-    cursor: pointer;
-}
-
-.icon-24{
-    font-size: 24px;
-    color: #49BF73;
+    transition-duration: 0.8s;
 }
 
 .nav-item{
-    padding: 25px;
-    cursor: pointer;
-    margin: 0 5px;
-    transition: all 0.4s ease;
+    margin: 0 15px;
+    padding: 15px 15px;
 }
 
-.nav-scrolled{
-    background: #222;
+.nav-menu{
+    margin-left: auto;
+    margin-right: 50px;
 }
 
-.nav-scrolled .logo{
-    padding: 10px !important;
+.dark-navbar{
+    background: black;
 }
 
-.nav-scrolled .nav-item{
-    padding: 10px 25px !important;
+.dark-navbar .nav-item{
+    padding: 20px;
 }
-
-/*
-.nav-item:hover{
-    color: #49BF73;
-}
-*/

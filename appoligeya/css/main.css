@@ -1,63 +1,62 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Bell MT", serif;
 }
 
-#background-first{
-    background: url(../img/background.png) no-repeat 0 100%;
-    background-size: cover;
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.loading{
+    position: fixed;
+    background: white;
+    top: 0;
+    left: 0;
+    transition-duration: 0.8s;
+    width: 100vw;
+    height: 100vh;
+}
+
+.background{
     position: fixed;
     width: 100vw;
     height: 100vh;
     z-index: -2;
+    background: url(../img/header.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.background img{
+    height: auto;
+    width: 100vw;
+    background-size: cover;
 }
 
 .text-uppercase{
     text-transform: uppercase;
 }
 
-.color{
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    margin: 15px;
-    cursor: pointer;
+.text-center{
+    text-align: center;
 }
 
-.c1{
-    background: #FF6D00;
+.container-fluid{
+    width: 100%;
 }
 
-.c2{
-    background: #FF9100;
+.container{
+    width: 1366px;
+    margin: auto;
 }
 
-.c3{
-    background: #D50000;
+.r{
+    transform: scale(-1, -1);
 }
 
-.c4{
-    background: #DD2C00;
-}
-
-.c5{
-    background: #00B8D4;
-}
-.c6{
-    background: #49BF73;
-}
-.c7{
-    background: #8f8f8f;
-}
-
-.c-item{
-    display: none;
-}
-
-#color-changer{
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translate(0, -50%);
+@media screen and (max-width: 1365px){
+    .container{
+        width: 90%;
+    }
 }

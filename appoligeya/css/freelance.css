@@ -1,0 +1,20 @@
+#freelance{
+    background: url(../img/freelance.jpg) no-repeat;
+    color: white;
+    padding: 40px 0;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.f-button{
+    padding: 5px 80px;
+    border: 1px solid white;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.f-title{
+    font-size: 60px;
+}

@@ -1,0 +1,26 @@
+#services{
+    background: white;
+    padding-top: 120px;
+    padding-bottom:120px;
+}
+
+.service-title{
+    font-size: 40px;
+}
+
+.service-desc{
+    font-size: 28px;
+}
+
+.service-item{
+    padding: 15px 0;
+    max-width: 360px;
+}
+
+.col-services-title{
+    text-align: center;
+    width: 430px;
+    padding-right: 15px;
+    border-right: 3px solid #525253;
+    font-size: 60px;
+}
