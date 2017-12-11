@@ -1,10 +1,10 @@
 footer{
-    background: #535353;
+    background: black;
     padding: 40px 0;
     color: white;
 }
 
 .footer-item i{
     padding: 10px;
-    border: 1px solid white;
+    border: 2px solid white;
 }
