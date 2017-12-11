@@ -5,6 +5,7 @@ nav{
     font-size: 30px;
     width: 100%;
     transition-duration: 0.8s;
+    z-index: 999;
 }
 
 .nav-item{

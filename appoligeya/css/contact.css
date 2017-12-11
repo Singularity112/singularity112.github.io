@@ -1,6 +1,8 @@
 #contact{
-    background: white;
+    background: url('../img/contact.jpg') no-repeat;
     padding-bottom: 60px;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .contact-title{
@@ -15,8 +17,9 @@
     font-weight: bold;
 }
 
-.contact-c img{
+.contact-c i{
     margin-right: 5px;
+    font-size: 32px;
 }
 
 .contact-or{
@@ -51,7 +54,7 @@
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
-    background: transparent;
+    background: white;
 }
 
 .contact-container{

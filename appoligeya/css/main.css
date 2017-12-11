@@ -9,6 +9,10 @@ a{
     text-decoration: none;
 }
 
+.slick-list{
+    z-index: 99 !important;
+}
+
 .loading{
     position: fixed;
     background: white;
@@ -17,6 +21,7 @@ a{
     transition-duration: 0.8s;
     width: 100vw;
     height: 100vh;
+    z-index: 999999;
 }
 
 .background{

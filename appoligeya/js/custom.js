@@ -23,8 +23,13 @@ $(document).ready(function () {
         else {
             $('nav').removeClass('dark-navbar');
         }
-
     });
+
+    s_top = $("body").scrollTop();
+    yes = $("#services").offset().top;
+    if(s_top > yes - 50){
+        $('nav').addClass('dark-navbar');
+    }
 
     setTimeout(function () {
         $('.loading').hide();
