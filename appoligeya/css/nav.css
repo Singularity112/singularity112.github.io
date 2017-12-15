@@ -33,6 +33,7 @@ nav{
 
 .tablet-nav{
     position: fixed;
+    display: none;
     top: 20px;
     right: 20px;
     color: white;
@@ -64,5 +65,9 @@ nav{
 
     .nav-item{
         padding-left: 0;
+    }
+
+    .tablet-nav{
+        display: block;
     }
 }
