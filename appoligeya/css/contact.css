@@ -57,7 +57,34 @@
     background: white;
 }
 
-.contact-container{
+.contact-container {
     width: 600px;
     margin: auto;
+}
+
+@media screen and (max-width: 768px){
+    .contact-container{
+        width: 100%;
+    }
+
+    .contact-title{
+        font-size: 34px;
+    }
+
+    .contact-c{
+        font-size: 20px;
+    }
+
+    .contact-or{
+        font-size: 20px;
+    }
+
+    .input-item input, .input-item textarea{
+        width: auto;
+        padding-bottom: 20px;
+    }
+
+    .c-btn{
+        margin-left: initial;
+    }
 }

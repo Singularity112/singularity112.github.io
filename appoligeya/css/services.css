@@ -24,3 +24,15 @@
     border-right: 3px solid #525253;
     font-size: 60px;
 }
+
+@media screen and (max-width: 768px){
+    .col-services-title{
+        width: 100% !important;
+        border: none !important;
+    }
+
+    .service-item{
+        border-top: 1px solid lightgray;
+        margin-top: 25px;
+    }
+}

@@ -64,4 +64,8 @@ a{
     .container{
         width: 90%;
     }
+
+    .background{
+        background-position: right, center;
+    }
 }

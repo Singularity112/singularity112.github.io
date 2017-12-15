@@ -57,3 +57,24 @@
 .ml-auto{
     margin-left: auto;
 }
+
+@media screen and (max-width: 768px){
+    .tablet-col{
+        flex-direction: column !important;
+    }
+
+    .tablet-text-center{
+        text-align: center !important;
+    }
+
+    .tablet-ai-center{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .mobile-col{
+        flex-direction: column !important;
+    }
+}
+

@@ -21,3 +21,17 @@
 .about-main{
     font-size: 46px;
 }
+
+@media screen and (max-width: 768px){
+    .about-smth{
+        font-size: 20px;
+    }
+
+    .about-title{
+        font-size: 40px;
+    }
+
+    .about-main{
+        font-size: 20px;
+    }
+}

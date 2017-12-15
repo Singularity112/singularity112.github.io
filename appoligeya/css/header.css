@@ -12,3 +12,13 @@ header{
 .header-desc{
     font-size: 60px;
 }
+
+@media screen and (max-width: 768px){
+    .header-name{
+        font-size: 30px;
+    }
+
+    .header-desc{
+        font-size: 40px;
+    }
+}

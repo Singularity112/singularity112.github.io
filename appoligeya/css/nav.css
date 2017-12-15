@@ -30,3 +30,39 @@ nav{
 .dark-navbar{
     background: black;
 }
+
+.tablet-nav{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 40px;
+    z-index: 9999999999;
+    transition-duration: 0.4s;
+}
+
+.dark-nav{
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    nav{
+        background: black;
+        display: none;
+        transition: all 0s ease;
+    }
+
+    .navigat{
+        align-items: initial;
+        flex-direction: column;
+    }
+
+    .nav-menu{
+        flex-direction: column;
+        margin-left: initial;
+    }
+
+    .nav-item{
+        padding-left: 0;
+    }
+}
