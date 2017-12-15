@@ -51,6 +51,8 @@ nav{
         background: black;
         display: none;
         transition: all 0s ease;
+        width: 50% !important;
+        height: 100%;
     }
 
     .navigat{
@@ -61,6 +63,7 @@ nav{
     .nav-menu{
         flex-direction: column;
         margin-left: initial;
+        margin-right: initial;
     }
 
     .nav-item{

@@ -27,12 +27,15 @@
 
 @media screen and (max-width: 768px){
     .col-services-title{
-        width: 100% !important;
-        border: none !important;
+        width: 80% !important;
+        margin: auto;
+        border-right: none !important;
+        border-bottom: 2px solid ;
+        padding-right: 0;
     }
 
     .service-item{
-        border-top: 1px solid lightgray;
+        border-bottom: 1px solid #e8e8e8;
         margin-top: 25px;
     }
 }

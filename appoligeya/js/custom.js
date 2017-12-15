@@ -54,7 +54,7 @@ $(document).ready(function () {
 
     $('.tablet-nav').on('click', function () {
         $('nav').toggleClass('active-nav');
-        $('nav').slideToggle(150);
+        $('nav').toggle("slide",'left');
 
         if ($('nav').hasClass('active-nav')){
             $('.tablet-nav').removeClass('dark-nav');
@@ -63,7 +63,7 @@ $(document).ready(function () {
 
     $('.nav-item a').on('click', function () {
        $('nav').toggleClass('active-nav');
-       $('nav').slideToggle(150);
+       $('nav').toggle("slide");
     });
 
 
