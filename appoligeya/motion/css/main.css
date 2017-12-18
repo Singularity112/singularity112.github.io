@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     margin: 0;
     padding: 0;
@@ -163,4 +164,177 @@ footer{
     font-size: 34px;
     color: #9f747d;
     margin: 15px 30px;
+=======
+body{
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.container-fluid{
+    width: 100%;
+}
+
+.container{
+    width: 1366px;
+    margin: auto;
+}
+
+.col{
+    width: 50%;
+}
+
+nav{
+    background: rgba(249,241,241,0.65);
+    color: #9f747d;
+    font-size: 17px;
+    padding: 10px 0;
+    position: relative;
+}
+
+.nav-item{
+    padding: 5px;
+    margin: 0 15px;
+}
+
+.nav-logo{
+    position: absolute;
+    left: 50%;
+    top: 15px;
+    transform: translate(-50%, 0);
+}
+
+.nav-sign{
+    border: 1px solid #ebced0;
+    border-radius: 8px;
+    padding: 3px 40px;
+    background: white;
+    position: absolute;
+    right: 40px;
+    top: 12px;
+    cursor: pointer;
+}
+
+header{
+    width: 100%;
+    height: 768px;
+    background: url(../img/header.png) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.header-title{
+    position: absolute;
+    bottom: 45%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.header-text{
+    font-size: 38px;
+    color: white;
+}
+
+.header-buttons{
+    margin-top: 60px;
+}
+
+.header-btn a{
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    background: #f9f0f1;
+    color: #9f747d;
+    border-radius: 10px;
+    display: block;
+}
+
+.sec-title{
+    font-size: 42px;
+    color: #828282;
+    font-weight: bold;
+}
+
+.sec-desc{
+    color: #828282;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.sec-img{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+.section-text{
+    padding: 0 15%;
+}
+
+.sec-main{
+    padding: 50px 0;
+}
+
+.sec-reverse{
+    background: #fdfafa;
+}
+
+footer{
+    background: #ebced0;
+}
+
+.footer-padding{
+    padding: 0 25px;
+}
+
+.footer-title{
+    padding: 20px 80px;
+    color: #9f747d;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.footer-hr{
+    height: 1px;
+    width: 100%;
+    background: white;
+}
+
+.footer-nav-title{
+    font-size: 26px;
+    color: #9f747d;
+    padding: 10px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footer-nav-item{
+    font-size: 26px;
+    color: #9f747d;
+    margin: 3px 0;
+}
+
+.footer-socials{
+    margin-top: 70px;
+}
+
+.social-item{
+    font-size: 34px;
+    color: #9f747d;
+    margin: 15px 30px;
+}
+
+@media screen and (max-width: 1366px){
+    .container{
+        width: 90%;
+    }
+>>>>>>> mobile
 }
