@@ -8,72 +8,73 @@
 
     <body>
         <header class = "container-fluid">
-            <nav id = "nav" class = "container-fluid">
-                <div class = "container d-flex">
-                    <div class = "col d-flex jc-center ai-center">
-                        <nav-link href = "#" text = "pricing"></nav-link>
-                        <nav-link href = "#" text = "download"></nav-link>
+            <div class = "container" id = "header">
+                <nav id = "nav" class = "container-fluid">
+                    <div class = "container d-flex">
+                        <div class = "col d-flex jc-center ai-center">
+                            <nav-link href = "#" text = "pricing"></nav-link>
+                            <nav-link href = "#" text = "download"></nav-link>
+                        </div>
+                        <div class = "nav-logo">
+                            <img src = "img/logo.png">
+                        </div>
+                        <div class = "col d-flex jc-center ai-center">
+                            <nav-link href = "#" text = "support"></nav-link>
+                            <nav-link href = "#" text = "about"></nav-link>
+                            <div class = "nav-sign">sign in</div>
+                        </div>
                     </div>
-                    <div class = "nav-logo">
-                        <img src = "img/logo.png">
-                    </div>
-                    <div class = "col d-flex jc-center ai-center">
-                        <nav-link href = "#" text = "support"></nav-link>
-                        <nav-link href = "#" text = "about"></nav-link>
-                        <div class = "nav-sign">sign in</div>
-                    </div>
-                </div>
-            </nav>
+                </nav>
 
-            <div class = "header-title" id = "header-title">
-                <div class = "header-text">Do your motion in few clicks</div>
-                <div class = "header-buttons d-flex ai-center jc-around">
-                    <btn text="Try Free" href = "#"></btn>
-                    <btn text="Get a License" href = "#"></btn>
+                <div class = "header-title" id = "header-title">
+                    <div class = "header-text">Do your motion in few clicks!</div>
+                    <div class = "header-buttons d-flex ai-center jc-around">
+                        <btn text="Try Free" href = "#"></btn>
+                        <btn text="Get a License" href = "#" class = "no-opacity"></btn>
+                    </div>
                 </div>
             </div>
         </header>
 
+        <div class = "future container-fluid">
+            <img src = "img/future.png">
+            <div class = "future-text">
+                THE FUTURE IS ALREADY TOODAY!
+            </div>
+        </div>
+
         <section class = "container-fluid" id = "main-content">
             <div class = "container">
-                <sect img = "img/s1.png" title = "Easy  to use" text = "
-                    From the animation of
-                    cartoon characters
-                    to the movement of complex
-                    three-dimensional scenes.
-                    The ability to move
-                    objects expressively,
-                    so that they have a character,
-                    expression, charisma, drama.
+                <div class = "sec-header"><img src = "img/section-header.png"></div>
+                <sect img = "img/organized.png" title = "Keep your designs organized in the cloud" text = "
+Upload any source files
+to one safe place,
+where your entire team
+can access, open
+and download them 24/7.
+Organize designs
+in projects and keep
+design versions in sync.
                 "></sect>
-                <sectreverse img = "img/s2.png" title = "Keep your designs organized in the cloud" text = "
-                    Upload any source files
-                    to one safe place,
-                    where your entire team
-                    can access, open
-                    and download them 24/7.
-                    Organize designs in projects
-                    and keep design versions in sync.
+                <sectreverse img = "img/organized.png" title = "Comment and give visual design feedback" text = "
+Invite your team members
+and easily manage
+user permissions.
+Give precise design
+feedback via comments
+and get notified on
+Slack or email when
+something changes.
                 "></sectreverse>
-                <sect img = "img/s3.png" title = "Comment and give visual design feedback" text = "
-                    Invite your team members
-                    and easily manage
-                    user permissions.
-                    Give precise design
-                    feedback via comments
-                    and get notified on
-                    Slack or email when
-                    something changes.
-                "></sect>
             </div>
         </section>
 
-        <footer class = "container-fluid" id = "footer">
-            <div class = "container">
+        <footer class = "container-fluid">
+            <div class = "container" id = "footer">
                 <div class = "footer-padding">
                     <div class = "footer-title d-flex jc-between ai-center">
                         <img src = "img/logo.png">
-                        <div>
+                        <div class = "as-end">
                             english <img src = "img/arrow-down.png">
                         </div>
                     </div>
@@ -88,11 +89,11 @@
 
                     <div class = "footer-hr"></div>
                 </div>
-            </div>
 
-            <div class = "footer-socials d-flex ai-center jc-center" id = "socials">
-                <div class = "social-item" v-for="s in socials">
-                    <a href = "#"><i :class = "s.social"></i></a>
+                <div class = "footer-socials d-flex ai-center jc-center" id = "socials">
+                    <div class = "social-item" v-for="s in socials">
+                        <a href = "#"><i :class = "s.social"></i></a>
+                    </div>
                 </div>
             </div>
         </footer>

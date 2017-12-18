@@ -35,7 +35,7 @@ var sect = {
                     '{{title}}' +
                 '</div>' +
                 '<div class = "sec-desc">' +
-                    '{{text}}' +
+                    '<pre>{{text}}</pre>' +
                 '</div>' +
             '</div>' +
         '</div>' +
@@ -47,12 +47,12 @@ var sectreverse = {
     template:
     '<div class = "sec-main d-flex ai-center sec-reverse">' +
     '<div class = "col">' +
-    '<div class = "section-text">' +
+    '<div class = "section-text reverse">' +
     '<div class = "sec-title">' +
     '{{title}}' +
     '</div>' +
     '<div class = "sec-desc">' +
-    '{{text}}' +
+    '<pre>{{text}}</pre>' +
     '</div>' +
     '</div>' +
     '</div>' +
@@ -121,7 +121,6 @@ var footerApp = new Vue({
            }
        ],
         socials: [
-            { social: 'fa fa-behance' },
             { social: 'fa fa-facebook' },
             { social: 'fa fa-instagram' },
             { social: 'fa fa-twitter' }
