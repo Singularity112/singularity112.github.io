@@ -10,7 +10,7 @@ body{
 
 @font-face {
     font-family: helvetica, sans-serif;
-    src: url(../css/HelveticaRegular.ttf);
+    src: url(../css/Helvetica.otf);
 }
 
 a{
@@ -40,8 +40,9 @@ nav{
 }
 
 .nav-item{
-    padding: 5px;
-    margin: 0 15px;
+    padding: 6px;
+    margin: 0 30px;
+    font-size: 27px;
 }
 
 .nav-logo{
@@ -53,10 +54,12 @@ nav{
 
 .nav-sign{
     padding: 3px 40px;
-    color: white;
+    color: #cad3dc;
+    font-size: 27px;
     position: absolute;
     right: 40px;
-    top: 12px;
+    top: 50%;
+    transform: translate(0,-50%);
     cursor: pointer;
 }
 
@@ -68,6 +71,7 @@ nav{
 }
 
 .header-title{
+    display: inline-table;
     position: absolute;
     bottom: 45%;
     left: 50%;
@@ -75,7 +79,7 @@ nav{
 }
 
 .header-text{
-    font-size: 38px;
+    font-size: 60px;
     color: white;
 }
 
@@ -85,15 +89,31 @@ nav{
 
 .header-btn a{
     text-align: center;
-    width: 170px;
-    height: 50px;
-    line-height: 50px;
-    font-weight: bold;
-    font-size: 20px;
+    width: 300px;
+    height: 80px;
+    margin: 0 50px;
+    line-height: 80px;
+    font-size: 44px;
     background: rgba(62,52,50, 0.8);
     color: white;
     border-radius: 10px;
     display: block;
+}
+
+.sec-main .col:first-child{
+    width: 60%;
+}
+
+.sec-main .col:nth-child(2){
+    width: 40%;
+}
+
+.sec-reverse .col:first-child{
+    width: 40%;
+}
+
+.sec-reverse .col:nth-child(2){
+    width: 60%;
 }
 
 .future img{
@@ -147,7 +167,7 @@ nav{
     padding: 0;
     background: white;
     float: right;
-    width: 80%;
+    width: 90%;
 }
 
 .section-text.reverse{
@@ -168,6 +188,7 @@ nav{
 #footer{
     background: url('../img/footer.png') no-repeat;
     background-size: cover;
+    font-size: 26px;
 }
 
 .footer-padding{
@@ -188,10 +209,9 @@ nav{
 }
 
 .footer-nav-title{
-    font-size: 26px;
+    font-size: 30px;
     color: white !important;
     padding: 10px 0;
-    font-weight: bold;
     text-transform: uppercase;
 }
 

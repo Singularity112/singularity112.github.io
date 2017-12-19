@@ -121,8 +121,8 @@ var footerApp = new Vue({
            }
        ],
         socials: [
-            { social: 'fa fa-facebook' },
             { social: 'fa fa-instagram' },
+            { social: 'fa fa-facebook' },
             { social: 'fa fa-twitter' }
         ]
     }
