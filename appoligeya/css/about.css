@@ -10,12 +10,14 @@
 .about-smth{
     font-size: 40px;
     margin: 15px 0;
+    color: #333333;
 }
 
 .about-title{
     font-size: 60px;
     font-weight: bold;
     margin: 25px 0;
+    color: #333333;
 }
 
 .about-main{
