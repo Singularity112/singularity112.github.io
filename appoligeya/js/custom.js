@@ -62,9 +62,10 @@ $(document).ready(function () {
     });
 
     $('.nav-item a').on('click', function () {
-       $('nav').toggleClass('active-nav');
-       $('nav').toggle("slide");
+        if (window.screen.availWidth < 789){
+            $('nav').toggle("slide");
+            $('nav').toggleClass('active-nav');
+        }
     });
-
 
 });
