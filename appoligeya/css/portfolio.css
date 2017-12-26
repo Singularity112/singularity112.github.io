@@ -60,7 +60,7 @@
 }
 
 .p-item-href a{
-    text-decoration: underline;
+    border-bottom: 2px solid black;
 }
 
 @media screen and (max-width: 1100px){
