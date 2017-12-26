@@ -1,0 +1,23 @@
+#modal-image{
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: 99999;
+    overflow-y: scroll;
+    display: none;
+}
+
+.image-container{
+    width: 90%;
+    height: 100%;
+    background: red;
+    margin: 50px auto;
+}
+
+.modal-img{
+    width: 100%;
+}
