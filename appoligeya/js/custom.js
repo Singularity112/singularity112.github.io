@@ -68,4 +68,22 @@ $(document).ready(function () {
         }
     });
 
+    $('#modal-image').on('click', function (e) {
+        if (!$(e.target).hasClass('image-container') && !$(e.target).hasClass('modal-img')){
+            $('#modal-image').hide();
+        }
+    });
+
+    $(document).keyup(function(e) {
+        if (e.keyCode == 27) {
+            $('#modal-image').hide();
+        }
+    });
+
+    $('.portf-slider img').on('click', function () {
+        var src = $(this).attr('src');
+        $('.modal-img').attr('src', src);
+        $('#modal-image').show();
+    });
+
 });
