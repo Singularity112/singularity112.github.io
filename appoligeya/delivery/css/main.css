@@ -1,4 +1,4 @@
-header{
+﻿header{
     background: url("../img/header.png");
     height: auto;
     padding-bottom: 20px;
@@ -116,10 +116,7 @@ nav{
 }
 
 .actsii{
-    background: linear-gradient(45deg, #656d33 33%, #cbaa8e 66%, #cbaa8e);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: #0B2349;
+    color: #77824a;
     display: table;
     font-size: 50px;
     font-weight: bold;
