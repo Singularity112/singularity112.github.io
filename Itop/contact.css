@@ -1,0 +1,68 @@
+#contact{
+    background: url(../img/contact.jpg) no-repeat;
+    background-size: cover;
+}
+
+#contact .container{
+    height: 520px;
+}
+
+.contact-cont{
+    background: rgba(0,0,0,0.7);
+    border-radius: 10px;
+    padding: 30px 40px;
+    color: white;
+}
+
+.contact-title{
+    font-size: 24px;
+    margin: 15px 0;
+    position: relative;
+}
+
+.contact-title:after{
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: white;
+    content: '';
+    bottom: -5px;
+    left: 0;
+}
+
+.contact-description{
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.contact-tel{
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.contact-or{
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.contact-btn{
+    margin: 10px 0;
+    font-size: 18px;
+    padding: 10px 30px;
+    background: #189047;
+    cursor: pointer;
+}
+
+#contact .bar{
+    background: #189047 !important;
+}
+
+@media screen and (max-width: 375px){
+    .contact-tel{
+        font-size: 26px;
+    }
+
+    .contact-cont{
+        padding: 30px 10px;
+    }
+}
