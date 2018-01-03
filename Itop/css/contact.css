@@ -27,6 +27,7 @@
     background: white;
     content: '';
     bottom: -5px;
+    left: 0;
 }
 
 .contact-description{
