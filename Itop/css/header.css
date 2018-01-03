@@ -1,0 +1,53 @@
+header{
+    height: 100vh;
+    background: url('../img/header.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header-col{
+    width: 50%;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+}
+
+.header-border{
+    position: relative;
+    padding: 45px 65px;
+    color: white;
+}
+
+.live-border .border{
+    background: none;
+}
+
+.header-border-desc{
+    font-size: 28px;
+    padding: 10px 0;
+}
+
+.header-border-title{
+    font-size: 48px;
+}
+
+.header-border-href{
+    font-size: 26px;
+}
+
+.header-border-href i{
+    font-size: 18px;
+}
+
+@media screen and (max-width: 425px){
+    .header-border{
+        padding: 10px 15px;
+    }
+
+    .header-border-title{
+        font-size: 38px;
+    }
+
+    .header-border-href{
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,56 @@
+#about{
+    margin-top: 50px;
+}
+
+.about-text{
+    width: 60%;
+    background: #f7f7f7;
+    color: #464646;
+    padding: 30px 45px;
+}
+
+.about-image{
+    width: 35%;
+    padding-left: 10px;
+}
+
+.about-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-title{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 33px;
+}
+
+.about-title-desc{
+    margin-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+
+.about-title-desc > span {
+    padding-right: 5px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #109121;
+}
+
+.about-desc-title{
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.about-desc{
+    font-size: 16px;
+    margin: 10px 0;
+    line-height: 2;
+}
+
+@media screen and (max-width: 400px){
+    .about-title-desc span{
+        border-bottom: none;
+    }
+}
