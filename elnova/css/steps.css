@@ -1,0 +1,115 @@
+#steps{
+    background: #101010;
+    padding: 50px 0;
+}
+
+.steps-title{
+    font-size: 48px;
+    margin: 25px 0;
+}
+
+.step-img{
+    position: relative;
+}
+
+.step-img-count{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    color: white;
+    font-size: 200px;
+    opacity: 0.7;
+    font-family: "Proxima Nova Bold" , sans-serif;
+}
+
+.step-img-count-mr{
+    right: 50%;
+}
+
+.step-img-count-ml{
+    left: 50%;
+}
+
+.step-text{
+    color: white;
+}
+
+.step-item.flex-row .step-text{
+    padding-right: 180px;
+}
+
+.step-item.flex-row-reverse .step-text{
+    padding-left: 70px;
+}
+
+.step-title{
+    font-size: 36px;
+    letter-spacing: 0.15em;
+}
+
+.step-desc{
+    margin-top: 10px;
+    font-size: 24px;
+    letter-spacing: 0.15em;
+}
+
+.step-item{
+    margin-top: 80px;
+}
+
+@media screen and (max-width: 1200px){
+    .step-text{
+        padding: 0 !important;
+        text-align: center;
+    }
+
+    .step-desc{
+        font-size: 1.5vw;
+        text-align: center;
+    }
+
+    .step-title{
+        font-size: 2vw;
+    }
+
+
+    .steps-title{
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .step-img img{
+        width: 100%;
+        height: auto
+    }
+
+    .step-img-count{
+        font-size: 10vw;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .steps-title{
+        font-size: 11vw;
+    }
+
+    .step-title{
+        font-size: 6vw;
+        text-align: center;
+    }
+
+    .step-desc{
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .step-img{
+        display: none;
+    }
+
+    .container-steps{
+        padding: 15px;
+    }
+}

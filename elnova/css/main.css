@@ -1,0 +1,122 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: white;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.container-fluid{
+    width: 100%;
+}
+
+.container{
+    width: 1920px;
+    margin: auto;
+}
+
+section{
+    position: relative;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.col{
+    width: 50%;
+    position: relative;
+}
+
+.p-relative{
+    position: relative;
+}
+
+.elnova-letter{
+    font-size: 400px;
+    color: #84ff00;
+    text-transform: uppercase;
+    font-family: "Proxima Nova Bold" , sans-serif;
+    opacity: 0.65;
+    z-index: 9999;
+}
+
+.elnova-e{
+    position: absolute;
+    bottom: -195px;
+    z-index: 99;
+    left: 0;
+    line-height: 320px;
+}
+
+.elnova-l{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.elnova-n{
+    position: absolute;
+    top: 50%;
+    left: -17px;
+    transform: translate(0,-50%);
+}
+
+.elnova-o{
+    position: absolute;
+    right: 0;
+    top: -400px;
+}
+
+.elnova-letter-o{
+    position: relative;
+}
+
+.elnova-v{
+    line-height: 320px;
+}
+
+.elnova-a{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+@media screen and (max-width: 1920px) {
+    .container{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .elnova-v{
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .elnova-letter{
+        display: none;
+    }
+
+    .tablet-text-center{
+        text-align: center;
+    }
+}

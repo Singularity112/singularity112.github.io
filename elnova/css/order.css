@@ -1,0 +1,161 @@
+#order{
+    background: #141414;
+    padding: 50px 0;
+}
+
+.order-items{
+    padding-left: 30px;
+}
+
+.order-text-title{
+    color: white;
+    font-size: 48px;
+    position: relative;
+}
+
+.order-item-title{
+    font-size: 18px;
+    color: white;
+    margin-top: 30px;
+}
+
+.order-item-desc{
+    color: white;
+    font-size: 15px;
+}
+
+.order-text{
+    max-width: 800px;
+    position: relative;
+}
+
+.order-form{
+    max-width: 450px;
+    padding: 0 2px;
+}
+
+.order-text-title:before{
+    position: absolute;
+    left: 0;
+    top: -10px;
+    width: 150px;
+    background: white;
+    content: '';
+    height: 1px;
+}
+
+.order-text:after{
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    height: 1px;
+    width: 150px;
+    background: white;
+    content: '';
+}
+
+.order-form-title{
+    font-size: 48px;
+    color: white;
+    position: relative;
+}
+
+.order-form-title:before{
+    position: absolute;
+    right: 50px;
+    top: 30px;
+    width: 60px;
+    height: 3px;
+    background: white;
+    content: '';
+}
+
+.order-form label{
+    font-size: 14px;
+    color: white;
+    margin-top: 30px;
+}
+
+.order-form input{
+    padding: 8px 5px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    font-family: "Proxima Nova Bold";
+}
+
+.order-form button{
+    margin-top: 30px;
+    background: #ff6d00;
+    border: none;
+    padding: 15px 0;
+    color: white;
+    font-size: 16px;
+    font-family: "Proxima Nova Bold";
+    text-transform: uppercase;
+}
+
+.order-line{
+    position: relative;
+}
+
+.order-line:before{
+    position: absolute;
+    background: white;
+    width: 45px;
+    height: 4px;
+    content: '';
+    top: -7px;
+    left: -65px;
+}
+
+@media screen and (max-width: 1200px){
+    .order-form{
+        padding-left: 15px;
+    }
+
+    .order-text{
+        padding-right: 15px;
+    }
+
+    .order-form-title:before{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .order-form-title{
+        font-size: 3vw;
+    }
+
+    .order-text-title{
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #order .container{
+        flex-direction: column;
+    }
+
+    .order-text:after{
+        left: 0;
+    }
+
+    .order-form-title{
+        font-size: 6vw;
+    }
+
+    .order-items{
+        padding-left: 0;
+    }
+
+    .order-text-title{
+        font-size: 6vw;
+    }
+
+    .order-form{
+        padding: 25px 0;
+    }
+}

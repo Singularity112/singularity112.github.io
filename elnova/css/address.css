@@ -1,0 +1,113 @@
+#address{
+    background: url(../img/address.png);
+    background-position: center;
+    position: relative;
+    height: 590px;
+}
+
+.address-title{
+    color: white;
+    font-size: 48px;
+    letter-spacing: 0.07em;
+    position: relative;
+}
+
+.address-title:after{
+    position: absolute;
+    left: -200px;
+    bottom: 0;
+    background: white;
+    width: 150px;
+    height: 1px;
+    content: '';
+}
+
+.address-desc{
+    margin-top: 30px;
+    color: white;
+    font-size: 18px;
+    position: relative;
+}
+
+.adress-btn{
+    margin-top: 30px;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    color: white;
+    position: relative;
+}
+
+.adress-btn img{
+    margin-left: 10px;
+}
+
+.address-text{
+    margin-top: 15%;
+}
+
+.adress-btn:after{
+    position: absolute;
+    width: 44px;
+    height: 3px;
+    background: white;
+    content: '';
+    bottom: -5px;
+    left: 0;
+}
+
+.address-desc:after{
+    position: absolute;
+    left: -65px;
+    top: 10px;
+    content: '';
+    width: 45px;
+    height: 3px;
+    background: white;
+}
+
+footer{
+    background: #101010;
+}
+
+.footer-copy{
+    color: #9c9b9b;
+    font-size: 15px;
+}
+
+.footer-title{
+    letter-spacing: 0.3em;
+    color: #6ab503;
+    font-size: 30px;
+}
+
+.footer-by{
+    font-size: 15px;
+    color: #9c9b9b;
+}
+
+footer .container > div{
+    padding: 10px 0;
+}
+
+@media screen and (max-width: 500px){
+    #address .col{
+        margin: auto;
+        text-align: center;
+    }
+
+    .address-title:after{
+        display: none;
+    }
+
+    .address-desc:after{
+        display: none;
+    }
+
+    .address-title{
+        font-size: 11vw;
+    }
+
+    .address-desc{
+        font-size: 5vw;
+    }
+}

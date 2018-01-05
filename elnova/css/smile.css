@@ -1,0 +1,129 @@
+#smile{
+    background: url(../img/smile-background.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#smile .container{
+    height: 680px;
+}
+
+.smile-title{
+    padding-top: 100px;
+    font-size: 48px;
+    color: white;
+    letter-spacing: 0.07em;
+}
+
+.smile-desc{
+    margin-top: 30px;
+    color: white;
+    font-size: 24px;
+    letter-spacing: 0.07em;
+}
+
+.smile-items{
+    margin-top: 100px;
+    padding: 0 80px;
+}
+
+.smile-item-digit{
+    color: #6cb606;
+    letter-spacing: 0.025em;
+    font-size: 150px;
+}
+
+.smile-item-desc:first-child{
+    font-size: 16px;
+}
+
+.smile-item-desc{
+    color: white;
+    font-size: 18px;
+}
+
+.smile-comfort{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.smile-comfort-text{
+    margin-top: 300px;
+    color: white;
+    font-size: 10px;
+    transform: rotate(-90deg);
+    letter-spacing: 0.075em;
+}
+
+@media screen and (max-width: 1200px){
+    .smile-items{
+        padding: 0 !important;
+    }
+
+    #smile .container{
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .smile-title{
+        padding-top: 0;
+    }
+
+    .smile-items{
+        margin-top: 20px;
+    }
+
+    .smile-comfort-text{
+        margin-top: 50px;
+    }
+
+    .smile-comfort{
+        left: 0;
+    }
+
+    .smile-item-digit{
+        font-size: 8vw;
+    }
+
+    .smile-item-desc{
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .smile-title{
+        font-size: 3vw;
+    }
+
+    .smile-desc{
+        font-size: 2vw;
+    }
+
+    .smile-comfort{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .smile-items{
+        flex-direction: column;
+    }
+
+    .smile-title{
+        font-size: 8vw;
+    }
+
+    .smile-desc{
+        font-size: 4vw;
+    }
+
+    .smile-item-digit{
+        font-size: 15vw;
+    }
+
+    .smile-item-desc{
+        font-size: 8vw;
+    }
+}

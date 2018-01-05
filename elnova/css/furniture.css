@@ -1,0 +1,39 @@
+#furniture{
+    background: url(../img/furniture-background.png);
+    background-size: cover;
+}
+
+#furniture .container{
+    height: 380px;
+}
+
+.furniture-title{
+    font-size: 48px;
+    color: white;
+    letter-spacing: 0.025em;
+}
+
+.furniture-btn{
+    font-size: 18px;
+    color: white;
+    background: #6cb606;
+    padding: 20px 45px;
+    margin-top: 2em;
+    letter-spacing: 0.025em;
+}
+
+@media screen and (max-width: 768px){
+    .furniture-title{
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .furniture-title{
+        font-size: 11vw;
+    }
+
+    .furniture-btn{
+        text-align: center;
+    }
+}

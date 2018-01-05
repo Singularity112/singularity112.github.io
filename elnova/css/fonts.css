@@ -1,0 +1,65 @@
+@font-face{
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Open Sans Bold';
+    src: url(../fonts/OpenSans-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Proxima Nova';
+    src: url(../fonts/ProximaNova-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Proxima Nova Bold';
+    src: url(../fonts/ProximaNova-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Proxima Nova Extrabld';
+    src: url(../fonts/ProximaNova-Extrabld.ttf);
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Proxima Nova Light';
+    src: url(../fonts/ProximaNova-Light.ttf);
+    font-weight: 300;
+    font-style: normal;
+}
+
+.open-sans{
+    font-family: "Open Sans", sans-serif;
+}
+
+.open-sans-bold{
+    font-family: "Open Sans Bold", sans-serif;
+}
+
+.proxima-nova{
+    font-family: "Proxima Nova" , sans-serif;
+}
+
+.proxima-nova-bold{
+     font-family: "Proxima Nova Bold" , sans-serif;
+ }
+
+.proxima-nova-extrabld{
+    font-family: "Proxima Nova Extrabld" , sans-serif;
+}
+
+.proxima-nova-light{
+    font-family: "Proxima Nova Light", sans-serif;
+}
