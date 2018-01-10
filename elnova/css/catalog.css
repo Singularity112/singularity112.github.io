@@ -47,7 +47,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -48%);
-    z-index: 999;
+    z-index: 105;
     width: 86px;
     height: 313px;
 }
@@ -71,6 +71,18 @@
     text-transform: uppercase;
     font-family: "Proxima Nova Bold" , sans-serif;
     letter-spacing: 0.075em;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.catalog-btn:hover{
+    border: 1px solid #6ab503;
+}
+
+.catalog-btn:hover > .catalog-background{
+   color: #6ab503;
+    background: white;
+    transition-duration: 0.4s;
 }
 
 .catalog-background{

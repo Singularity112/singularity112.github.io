@@ -39,6 +39,12 @@
     position: absolute;
     bottom: 50px;
     font-size: 14px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.italian-href:hover{
+    color: #6ab503;
 }
 
 .italian-href img{

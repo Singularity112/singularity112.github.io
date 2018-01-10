@@ -35,6 +35,12 @@
     letter-spacing: 0.2em;
     color: white;
     position: relative;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.adress-btn:hover{
+    color: #6cb606;
 }
 
 .adress-btn img{

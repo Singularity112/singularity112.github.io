@@ -25,6 +25,11 @@ header .container{
     padding: 0 50px;
 }
 
+nav a:hover{
+    color: #6cb606;
+    transition-duration: 0.4s;
+}
+
 nav{
     padding-top: 30px;
 }
@@ -53,6 +58,11 @@ nav{
     color: white;
     font-size: 15px;
     margin-left: 10px;
+    display: none;
+}
+
+.hamburger{
+    display: none;
 }
 
 .header-title{
@@ -74,6 +84,11 @@ nav{
     color: white;
     border: 2px solid white;
     letter-spacing: 0.2em;
+    transition-duration: 0.4s;
+}
+
+.header-title-btn:hover{
+    background: #6ab503;
 }
 
 .header-title-btn img{
@@ -130,9 +145,10 @@ nav{
 }
 
 .menu-opener{
-    position: absolute;
+    position: fixed;
     left: 20px;
     top: 30px;
+    z-index: 99999;
 }
 
 @media screen and (max-width: 1200px){
@@ -142,14 +158,27 @@ nav{
 }
 
 @media screen and (max-width: 768px){
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger-menu{
+        display: block;
+    }
+
     #nav{
         flex-direction: column;
         align-items: flex-start;
-        position: absolute;
-        right: 20px;
-        top: 30px;
-        padding: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        padding-top: 30px;
+        padding-left: 20px;
         display: none;
+        background: black;
+        height: 100%;
+        width: 50%;
+        z-index:9999;
     }
 
     .nav-center-item{
