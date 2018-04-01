@@ -1,0 +1,34 @@
+#transport{
+  background: url('../img/wolks.png');
+  background-size: cover;
+  padding-top: 170px;
+}
+
+#transport .container{
+  height: 870px;
+}
+
+.transport-cart{
+  border: 15px solid white;
+  max-width: 715px;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+}
+
+.transport-cart img{
+  width: 100%;
+}
+
+.transport-cart-title{
+  font-size: 28px;
+  color: #333333;
+  font-family: acrobat;
+  text-align: center;
+  padding: 20px 0 25px 0;
+  background: white;
+}
+
+#transport .section-desc{
+  padding-top: 0;
+}

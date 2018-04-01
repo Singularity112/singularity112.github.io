@@ -1,0 +1,56 @@
+header{
+  background: url('../img/header.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header .container{
+  height: 738px;
+}
+
+.header-phone{
+  position: absolute;
+  top: 34px;
+  right: 60px;
+  color: white;
+  font-size: 36px;
+  font-family: lifehack;
+}
+
+.header-title{
+  font-family: nautilus;
+  font-size: 140px;
+  color: white;
+  position: relative;
+  margin-top: -152px;
+}
+
+.header-title:before{
+  position: absolute;
+  background-image: linear-gradient(to bottom, #9a63ac, #f86369, #ffac63); /* Standard syntax; must be last */
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  content: 'Весь Азербайджан на ваших фото';
+  font-size: 30px;
+  bottom: 7px;
+  left: 17px;
+}
+
+.header-date{
+  font-size: 60px;
+  font-family: lifehack;
+  color: white;
+  margin-top: 17px;
+}
+
+.header-button{
+  margin-top: 35px;
+  font-size: 38px;
+  color: white;
+  padding: 6px 50px;
+  border: 2px solid white;
+  cursor: pointer;
+  font-family: lifehack;
+  text-transform: uppercase;
+}

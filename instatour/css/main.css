@@ -1,0 +1,157 @@
+@font-face {
+  font-family: lifehack;
+  src: url(../font/lifehack.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: nautilus;
+  src: url(../font/Nautilus.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: acrobat;
+  src: url(../font/Akrobat-Regular.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: acrobat-bold;
+  src: url(../font/Akrobat-Bold.otf);
+  font-weight: 800;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 1050px;
+  margin: auto;
+  position: relative;
+}
+
+.container-fluid{
+  width: 100%;
+  padding: 40px 0;
+  position: relative;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.section-heading{
+  padding-bottom: 40px;
+  text-align: center;
+  font-size: 50px;
+  font-family: nautilus;
+}
+
+.section-heading.b{
+  color: black;
+}
+
+.section-heading.w{
+  color: white;
+}
+
+.separator-top,
+.separator-bottom{
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.separator-top img,
+.separator-bottom img{
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+}
+
+.separator-top{
+  top: 0;
+}
+
+.separator-bottom{
+  bottom: -5px;
+}
+
+.section-desc{
+  font-size: 20px;
+  font-family: acrobat;
+  color: #333333;
+  padding: 20px 0 40px 0;
+  text-align: center;
+}
+
+.section-desc.w{
+  color: white;
+  font-family: acrobat-bold;
+}
+
+.map-lupe{
+  position: absolute;
+  bottom: -250px;
+  z-index: 200;
+  right: 0;
+}
+
+#modal{
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition-duration: 0.4s;
+  z-index: 99999;
+}
+
+.modal-body{
+  background: white;
+   padding: 40px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+#modal .section-heading{
+  padding-bottom: 10px;
+}
+
+.label{
+  font-family: acrobat;
+  font-size: 30px;
+  margin-top: 15px;
+}
+
+#modal input{
+  padding: 15px 20px;
+  border: none;
+  border-bottom: 1px solid #333333;
+  outline: none;
+}
+
+#modal .modal-button{
+  margin-top: 30px;
+  width: 100%;
+  color: black;
+  font-family: acrobat;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#modal.open{
+  left: 0;
+}

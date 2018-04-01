@@ -1,0 +1,29 @@
+.wyw-item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 490px;
+  margin-left: 20px;
+}
+
+.wyw-item-numb{
+  font-family: acrobat;
+  font-size: 120px;
+  color: #333333;
+}
+
+.wyw-item-img{
+  padding: 0 30px 0 50px;
+}
+
+.wyw-item-desc{
+  font-family: acrobat;
+  font-size: 18px;
+  color: #333333;
+}
+
+.wyw-items{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

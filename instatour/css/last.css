@@ -1,0 +1,87 @@
+#last{
+  background: url('../img/valley.png') no-repeat;
+  background-size: cover;
+  padding-top: 140px;
+}
+
+.last-items{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+
+.last-item{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 150px;
+  margin: auto;
+  text-align: center;
+}
+
+.last-desc{
+  font-family: acrobat;
+  color: white;
+  font-size: 24px;
+}
+
+.last-desc strong{
+  display: block;
+  font-family: acrobat-bold;
+}
+
+
+.last-s-desc{
+  font-family: acrobat;
+  color: white;
+  font-size: 24px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.last-s-title{
+  text-align: center;
+  padding: 25px 0;
+  font-size: 50px;
+  color: white;
+  font-family: actobat-bold;
+}
+
+.last-tarif > div{
+  margin-left: 30px;
+}
+
+.last-tarif{
+  padding-bottom: 40px;
+}
+
+.last-button{
+  color: white;
+  font-size: 38px;
+  border-bottom: 1px dashed white;
+  font-family: lifehack;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+footer{
+  padding: 35px 150px;
+  background: #333333;
+  justify-content: space-between;
+}
+
+footer a i{
+  color: #adadad;
+  margin-right: 15px;
+  font-size: 23px !important;
+  display: block;
+}
+
+footer .tel{
+  color: white;
+  font-family: acrobat-bold;
+  font-size: 30px;
+}
