@@ -59,3 +59,19 @@
 .live-slider-container img{
   max-height: 500px;
 }
+
+@media screen and (max-width: 1050px){
+  .live-item img{
+    height: 255px;
+  }
+  
+  .live-slider-arrow-next, .live-slider-arrow-prev{
+    top: 250px;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .live-slider-arrow-next, .live-slider-arrow-prev{
+    top: 130px;
+  }
+}

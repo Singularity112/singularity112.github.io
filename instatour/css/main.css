@@ -160,3 +160,88 @@ a{
 #modal.open{
   left: 0;
 }
+
+@media screen and (max-width: 1050px){
+  .container{
+    width: 90%;
+    height: auto !important;
+    padding: 0 !important;
+  }
+  
+  .container-fluid{
+    padding: 50px 0 !important;
+  }
+  
+  .separator-bottom img,
+  .separator-top img{
+    height: 30px;
+    display: none;
+  }
+  
+  .section-heading.w{
+    padding-top: 100px;
+  }
+  
+  .section-heading.b{
+    padding-top: 20px;
+  }
+  
+  .wys-button.to-tour{
+    margin-bottom: 150px;
+  }
+  
+  .map-lupe{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .section-heading{
+    font-size: 26px;
+  }
+  
+  .last-tarif{
+    flex-direction: column !important;
+  }
+  
+  .header-button{
+    font-size: 23px !important;
+  }
+  
+  footer{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    flex-direction: column;
+  }
+  
+  footer .tel{
+    margin-top: 15px;
+  }
+  
+  .cost-title-button{
+    padding-bottom: 15px !important;
+  }
+  
+  .cost-numb{
+    flex: 1;
+  }
+  
+  .cost-desc{
+    flex: 2;
+    margin-left: 0;
+  }
+  
+  .cost-not-items .cost-item{
+    margin-left: 0 !important;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px){
+  .live-slider-arrow-next, .live-slider-arrow-prev{
+    top: 120px !important;
+  }
+  
+  #what-you-see .section-heading.w{
+    padding-top: 130px !important;
+  }
+}

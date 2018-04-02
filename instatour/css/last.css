@@ -85,3 +85,26 @@ footer .tel{
   font-family: acrobat-bold;
   font-size: 30px;
 }
+
+@media screen and (max-width: 450px){
+  .last-item{
+    margin: 20px;
+    width: 200px;
+  }
+  
+  .last-items{
+    justify-content: center;
+  }
+  
+  #last .mobile-p{
+    padding-top: 20px;
+  }
+  
+  .last-button{
+    font-size: 26px;
+  }
+  
+  .last-tarif > div{
+    margin: 15px;
+  }
+}

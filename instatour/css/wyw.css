@@ -30,3 +30,17 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+@media screen and (max-width: 450px){
+  .wyw-item{
+    flex-direction: column;
+  }
+  
+  .wyw-item-img{
+    padding: 10px 0;
+  }
+  
+  .wyw-item-desc{
+    text-align: center;
+  }
+}

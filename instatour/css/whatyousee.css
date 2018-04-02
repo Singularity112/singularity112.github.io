@@ -103,3 +103,23 @@
   background: url('../img/arr-bottom.png');
   bottom: -52px;
 }
+
+@media screen and (max-width: 450px){
+  #what-you-see {
+    background-image: url(../img/castle-mobile.png) !important;
+  }
+  
+  #what-you-see .section-heading.w{
+    padding-top: 0;
+  }
+  
+  #what-you-see .separator-top img{
+    display: block !important;
+    height: 50px !important;
+  }
+  
+  #what-you-see .separator-bottom img{
+    display: block !important;
+    height: 50px !important;
+  }
+}

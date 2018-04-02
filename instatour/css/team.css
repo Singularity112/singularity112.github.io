@@ -148,3 +148,72 @@
   font-size: 18px;
   color: #000000;
 }
+
+@media screen and (max-width: 1050px){
+  
+  .nastya-container{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nastya-description{
+    margin-left: 0;
+    margin-top: 15px;
+    max-width: auto;
+  }
+  
+}
+
+@media screen and (min-width: 450px) and (max-width: 1050px){
+  .nastya-desc-desc{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .team-items-container{
+    flex-wrap: wrap;
+  }
+  
+  .team-item{
+    margin-top: 15px;
+  }
+  
+  .nastya-description{
+    background: white;
+  }
+  
+  #team{
+    padding-bottom: 170px !important;
+  }
+  
+  .nastya-desc-desc{
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  #team{
+    background-image: url('../img/turkey-mobile.png') !important;
+  }
+  
+  #team .separator-top img{
+    display: block !important;
+    height: 50px !important;
+  }
+  
+  #team .separator-top{
+    top: -2px;
+  }
+  
+  #team .separator-bottom img{
+    display: block !important;
+    height: 50px !important;
+  }
+  
+  .nastya-container{
+    margin-top: 20px !important;
+  }
+}

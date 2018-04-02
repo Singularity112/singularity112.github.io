@@ -54,3 +54,39 @@ header .container{
   font-family: lifehack;
   text-transform: uppercase;
 }
+
+@media screen and (max-width: 1050px){
+  .header-title{
+    margin: auto;
+  }
+  
+  .header-phone{
+    top: 0;
+  }
+  
+  img{
+    max-width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .header-title{
+    font-size: 60px;
+  }
+  
+  .header-title:before{
+    font-size: 12px;
+  }
+  
+  .header-phone{
+    position: relative;
+    top: initial;
+    left: initial;
+    right: initial;
+    margin: auto;
+  }
+  
+  header.container-fluid{
+    padding-bottom: 70px !important;
+  }
+}

@@ -48,3 +48,42 @@
   margin-top: 70px;
   cursor: pointer;
 }
+
+#howto .separator-top img,
+#howto .separator-bottom img{
+  display: none;
+}
+
+@media screen and (max-width: 450px){
+  #howto{
+    background-image: url('../img/nightsky-mobile.png') !important;
+  }
+  
+  .howto-item{
+    flex-direction: column !important;
+    margin-left: 0 !important;
+  }
+  
+  #howto .separator-top img{
+    display: block !important;
+    height: 50px !important;
+  }
+  
+  #howto .separator-top{
+    top: -2px;
+  }
+  
+  .howto-img{
+    padding: 0;
+  }
+  
+  .howto-desc{
+    text-align: center;
+    padding: 0 10px;
+  }
+  
+  #howto .separator-bottom img{
+    display: block !important;
+    height: 50px !important;
+  }
+}

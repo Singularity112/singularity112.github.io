@@ -45,3 +45,9 @@
     padding-bottom: 70px;
   }
 }
+
+@media screen and (max-width: 450px){
+  .transport-cart{
+    background: white;
+  }
+}
