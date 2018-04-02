@@ -1,11 +1,11 @@
 header{
   background: url('../img/header.png') no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: left;
 }
 
 header .container{
-  height: 738px;
+  height: 100vh;
 }
 
 .header-phone{

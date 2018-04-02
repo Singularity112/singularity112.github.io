@@ -18,6 +18,10 @@
   background: white;
 }
 
+.wys-item:hover{
+  transform: scale(1.15);
+}
+
 .wys-title{
   background: white;
   text-align: center;
@@ -37,7 +41,6 @@
 }
 
 .wys-item:hover{
-  transition-duration: 0.04s;
   box-shadow: 10px 10px 71px -9px rgba(0,0,0,0.75);
 }
 

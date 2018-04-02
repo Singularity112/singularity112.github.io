@@ -9,10 +9,15 @@
   src: url(../font/Nautilus.otf);
   font-weight: 400;
 }
-
 @font-face {
   font-family: acrobat;
-  src: url(../font/Akrobat-Regular.otf);
+  src: url(../font/Akrobat-Regular.woff2);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: acrobat-black;
+  src: url(../font/Akrobat-Black.otf);
   font-weight: 400;
 }
 

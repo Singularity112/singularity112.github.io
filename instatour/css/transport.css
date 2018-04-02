@@ -32,3 +32,16 @@
 #transport .section-desc{
   padding-top: 0;
 }
+
+@media screen and (max-width: 1400px){
+  #transport .container{
+    height: 820px;
+  }
+}
+
+@media screen and (min-width: 1400px){
+  #transport .container {
+    height: auto;
+    padding-bottom: 70px;
+  }
+}
