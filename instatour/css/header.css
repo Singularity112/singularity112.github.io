@@ -75,7 +75,10 @@ header .container{
   }
   
   .header-title:before{
-    font-size: 12px;
+        white-space: nowrap;
+        bottom: 0;
+        left: 0;
+        font-size: 13px;
   }
   
   .header-phone{
