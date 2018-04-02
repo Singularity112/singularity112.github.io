@@ -242,7 +242,7 @@ body{
   }
   
   .cost-numb{
-    flex: 1;
+    flex: 0.4;
   }
   
   .cost-desc{
@@ -279,6 +279,11 @@ body{
     display: block !important;
   }
   
+  .live-slider-arrow-next:hover, .live-slider-arrow-prev:hover{
+    background: transparent !important;
+    color: white !important;
+  }
+  
   .wys-arrow{
     display: block;
     position: absolute;
@@ -297,4 +302,14 @@ body{
     right: 30px;
   }
 
+}
+
+.section-heading br{
+  display: none;
+}
+
+@media screen and (max-width: 360px){
+  .section-heading br{
+    display: block;
+  }
 }
