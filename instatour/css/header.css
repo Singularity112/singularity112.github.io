@@ -74,6 +74,10 @@ header .container{
     font-size: 60px;
   }
   
+  .header-date{
+    font-size: 30px;
+  }
+  
   .header-title:before{
     font-size: 12px;
   }
