@@ -70,3 +70,13 @@
 .section-heading.mt{
   margin-top: 40px;
 }
+
+@media screen and (max-width: 450px) {
+  .cost-numb{
+    font-size: 110px;
+  }
+  
+  .cost-desc-desc{
+    font-size: 15px;
+  }
+}

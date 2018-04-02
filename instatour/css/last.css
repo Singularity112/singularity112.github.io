@@ -88,8 +88,8 @@ footer .tel{
 
 @media screen and (max-width: 450px){
   .last-item{
-    margin: 20px;
-    width: 200px;
+    margin: 20px 0;
+    width: 140px;
   }
   
   .last-items{
@@ -106,5 +106,9 @@ footer .tel{
   
   .last-tarif > div{
     margin: 15px;
+  }
+  
+  .cost-not-items .cost-item{
+    margin-top: 0 !important;
   }
 }

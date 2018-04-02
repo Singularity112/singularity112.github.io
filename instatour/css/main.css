@@ -193,11 +193,30 @@ a{
   .map-lupe{
     display: none;
   }
+  
+  .header-title:before{
+    font-size: 13px !important;
+    bottom: 0px !important;
+    left: 0 !important;
+    white-space: nowrap;
+  }
+  
+  .header-title{
+    font-size: 58px !important;
+  }
+}
+
+body{
+  overflow-x: hidden;
 }
 
 @media screen and (max-width: 450px){
   .section-heading{
     font-size: 26px;
+  }
+  
+  .wys-img{
+    height: 220px !important;
   }
   
   .last-tarif{
@@ -244,4 +263,38 @@ a{
   #what-you-see .section-heading.w{
     padding-top: 130px !important;
   }
+}
+
+.wys-arrow{
+  display: none;
+}
+
+@media screen and (max-width: 450px){
+  .wys-item{
+    margin: 0 !important;
+    max-width: initial !important;
+  }
+  
+  .wys-container{
+    display: block !important;
+  }
+  
+  .wys-arrow{
+    display: block;
+    position: absolute;
+    top: 260px;
+    z-index: 99999;
+    font-size: 32px;
+    padding: 3px 15px;
+    background: white;
+  }
+  
+  .wys-arrow-prev{
+    left: 30px;
+  }
+  
+  .wys-arrow-next{
+    right: 30px;
+  }
+
 }
