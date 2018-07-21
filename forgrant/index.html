@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sad</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src = "js/jquery.min.js"></script>
+	<script type="text/javascript" src = "js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body data-spy="scroll" data-target=".customMenu" data-offset="300">
+	<nav class="container-fluid">
+		<div class="container">
+			<div class="row d-flex justify-content-center">
+				<div class="col-xl-4 col-lg-9 col-md-12 d-flex flex-row align-items-center justify-content-around customMenu">
+					<a href="#presonal-info" class = "nav-link">Личная информация</a>
+					<a href="#exp" class = "nav-link ">Опыт</a>
+					<a href="#aboutMyself" class = "nav-link ">О себе</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<div class = "container-fluid" id = "background">
+		<div class="container"></div>
+	</div>
+
+	<section class = "container-fluid" id = "content">
+		<div class="container d-flex align-items-center justify-content-center text-center">
+			<form class = "d-flex flex-column align-items-center justify-content-center">
+				<div class="col-lg-6 justify-content-center">
+					<div class="title">
+						Анкета
+					</div>
+					<div class="privacy-img svg">
+						<svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47px" height="47px">
+							<path fill-rule="evenodd"  fill="rgb(158, 158, 158)"
+							 d="M23.500,47.000 C10.542,47.000 -0.000,36.458 -0.000,23.500 C-0.000,10.542 10.542,-0.000 23.500,-0.000 C36.458,-0.000 47.000,10.542 47.000,23.500 C47.000,36.458 36.458,47.000 23.500,47.000 ZM23.500,1.000 C11.094,1.000 1.000,11.094 1.000,23.500 C1.000,35.906 11.094,46.000 23.500,46.000 C35.906,46.000 46.000,35.906 46.000,23.500 C46.000,11.094 35.906,1.000 23.500,1.000 ZM33.847,36.312 L33.469,36.344 L33.469,36.872 C33.469,37.498 32.945,38.003 32.300,38.003 L13.439,38.003 L13.348,38.011 C13.334,38.011 13.322,38.003 13.308,38.003 L13.172,38.003 C12.527,38.003 12.003,37.498 12.003,36.872 L12.003,11.151 C12.003,10.526 12.527,10.019 13.172,10.019 L13.308,10.019 C13.322,10.019 13.334,10.011 13.348,10.011 L33.847,8.311 C34.479,8.311 34.994,8.819 34.994,9.444 L34.994,35.179 C34.994,35.804 34.479,36.312 33.847,36.312 ZM13.172,11.029 C13.093,11.029 13.026,11.084 13.026,11.151 L13.026,36.872 C13.026,36.938 13.091,36.992 13.172,36.992 L31.800,36.992 C31.881,36.992 31.946,36.938 31.946,36.872 L31.946,11.151 C31.946,11.084 31.879,11.029 31.800,11.029 L13.172,11.029 ZM33.971,9.444 C33.971,9.384 33.927,9.335 33.869,9.324 L25.898,10.019 L31.800,10.019 C32.445,10.019 32.969,10.526 32.969,11.151 L32.969,35.330 L33.757,35.305 L33.802,35.301 L33.847,35.301 C33.915,35.301 33.971,35.246 33.971,35.179 L33.971,9.444 ZM27.875,33.999 L17.136,33.999 C16.511,33.999 16.005,33.464 16.005,32.800 L16.005,32.200 C16.005,31.538 16.511,31.001 17.136,31.001 L27.875,31.001 C28.500,31.001 29.006,31.538 29.006,32.200 L29.006,32.800 C29.006,33.464 28.500,33.999 27.875,33.999 ZM28.006,32.200 C28.006,32.077 27.930,32.001 27.875,32.001 L17.136,32.001 C17.081,32.001 17.005,32.077 17.005,32.200 L17.005,32.800 C17.005,32.914 17.074,32.999 17.136,32.999 L27.875,32.999 C27.936,32.999 28.006,32.914 28.006,32.800 L28.006,32.200 ZM22.500,27.000 C18.910,27.000 16.000,24.090 16.000,20.500 C16.000,16.910 18.910,14.000 22.500,14.000 C26.090,14.000 29.000,16.910 29.000,20.500 C29.000,24.090 26.090,27.000 22.500,27.000 ZM22.500,15.000 C19.462,15.000 17.000,17.462 17.000,20.500 C17.000,23.538 19.462,26.000 22.500,26.000 C25.538,26.000 28.000,23.538 28.000,20.500 C28.000,17.462 25.538,15.000 22.500,15.000 Z"/>
+						</svg>
+					</div>
+
+					<div class="subtitle" id = "presonal-info">
+						Личная информация
+					</div>
+
+						<div class="form-group">
+							<label for="name" class = "active">ФИО</label>
+						    <input type="text" class="form-control-lg form-control" id = "name" value = "Голубев Дмитрий Сергеевич">
+						</div>
+						<div class="form-group col-lg-8 ml-auto mr-auto">
+							<div class="select-container">
+							<div class="selected-custom">1997</div>
+							<ul class="select-custom">
+								<li>Год рождения</li>
+								<li>2002</li>
+								<li>2001</li>
+								<li>2000</li>
+								<li>1999</li>
+								<li>1998</li>
+								<li>1997</li>
+								<li>1996</li>
+								<li>1995</li>
+								<li>1994</li>
+								<li>1993</li>
+								<li>1992</li>
+								<li>1991</li>
+								<li>1990</li>
+								<li>1989</li>
+								<li>1988</li>
+								<li>1987</li>
+								<li>1986</li>
+								<li>1985</li>
+								<li>1984</li>
+								<li>1983</li>
+							</ul>
+						</div>
+						</div>
+						<div class="form-group">
+							<label for="name" class = "active">Место проживания</label>
+						    <input type="text" class="form-control-lg form-control" id = "place" value = "Днепр">
+						</div>
+						<div class="form-group">
+							<label for="Skype" class = "active">Skype</label>
+						    <input type="text" class="form-control-lg form-control" id = "Skype" value = "singularity123097@gmail.com">
+						</div>
+						<div class="form-group">
+							<label for = "email" class = "active">E-mail</label>
+						    <input type="text" class="form-control-lg form-control" id="email" value = "singularity123097@gmail.com">
+						</div>
+				</div>	
+
+				<div class="exp-img svg">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47px" height="47px">
+						<path fill-rule="evenodd"  fill="rgb(158, 158, 158)"
+						 d="M23.500,47.000 C10.542,47.000 -0.000,36.458 -0.000,23.500 C-0.000,10.542 10.542,-0.000 23.500,-0.000 C36.458,-0.000 47.000,10.542 47.000,23.500 C47.000,36.458 36.458,47.000 23.500,47.000 ZM23.500,1.000 C11.094,1.000 1.000,11.094 1.000,23.500 C1.000,35.906 11.094,46.000 23.500,46.000 C35.906,46.000 46.000,35.906 46.000,23.500 C46.000,11.094 35.906,1.000 23.500,1.000 ZM20.009,33.002 L36.009,33.002 L36.009,35.002 L20.009,35.002 L20.009,33.002 ZM20.009,22.996 L36.009,22.996 L36.009,24.996 L20.009,24.996 L20.009,22.996 ZM20.009,12.990 L36.009,12.990 L36.009,14.990 L20.009,14.990 L20.009,12.990 ZM14.499,37.002 L13.499,37.002 C12.120,37.002 10.999,35.881 10.999,34.502 L10.999,33.502 C10.999,32.123 12.120,31.002 13.499,31.002 L14.499,31.002 C15.878,31.002 16.999,32.123 16.999,33.502 L16.999,34.502 C16.999,35.881 15.878,37.002 14.499,37.002 ZM15.999,33.502 C15.999,32.675 15.326,32.002 14.499,32.002 L13.499,32.002 C12.672,32.002 11.999,32.675 11.999,33.502 L11.999,34.502 C11.999,35.329 12.672,36.002 13.499,36.002 L14.499,36.002 C15.326,36.002 15.999,35.329 15.999,34.502 L15.999,33.502 ZM14.499,26.996 L13.499,26.996 C12.120,26.996 10.999,25.875 10.999,24.496 L10.999,23.496 C10.999,22.117 12.120,20.996 13.499,20.996 L14.499,20.996 C15.878,20.996 16.999,22.117 16.999,23.496 L16.999,24.496 C16.999,25.875 15.878,26.996 14.499,26.996 ZM15.999,23.496 C15.999,22.669 15.326,21.996 14.499,21.996 L13.499,21.996 C12.672,21.996 11.999,22.669 11.999,23.496 L11.999,24.496 C11.999,25.323 12.672,25.996 13.499,25.996 L14.499,25.996 C15.326,25.996 15.999,25.323 15.999,24.496 L15.999,23.496 ZM14.499,16.990 L13.499,16.990 C12.120,16.990 10.999,15.869 10.999,14.490 L10.999,13.490 C10.999,12.111 12.120,10.990 13.499,10.990 L14.499,10.990 C15.878,10.990 16.999,12.111 16.999,13.490 L16.999,14.490 C16.999,15.869 15.878,16.990 14.499,16.990 ZM15.999,13.490 C15.999,12.663 15.326,11.990 14.499,11.990 L13.499,11.990 C12.672,11.990 11.999,12.663 11.999,13.490 L11.999,14.490 C11.999,15.317 12.672,15.990 13.499,15.990 L14.499,15.990 C15.326,15.990 15.999,15.317 15.999,14.490 L15.999,13.490 Z"/>
+					</svg>
+				</div>
+
+				<div class="subtitle" id = "exp">
+					Расскажите о своем опыте
+				</div>
+
+				<div class="col-xl-9  col-lg-12 d-flex flex-row jc-center text-left flex-wrap">
+					<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+						<div class="form-check">
+						    <input type="checkbox">
+ 							<span class="checkmark"></span>
+ 							БЭМ/OOCSS
+						</div>
+						<div class="form-check">
+						    <input type="checkbox" checked>
+ 							<span class="checkmark"></span>
+ 							Stylus/LESS/SASS
+						</div>
+						<div class="form-check">
+						    <input type="checkbox" checked>
+ 							<span class="checkmark"></span>
+ 							Работаю с SVG
+						</div>
+					</div>
+
+					<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 inputs1">
+						<div class="form-check">
+						    <input type="checkbox">
+ 							<span class="checkmark"></span>
+ 							Верстаю семантично
+						</div>
+						<div class="form-check">
+						    <input type="checkbox" checked>
+ 							<span class="checkmark"></span>
+ 							ES2015/ES2016 (часть)
+						</div>
+						<div class="form-check">
+						    <input type="checkbox" checked>
+ 							<span class="checkmark"></span>
+ 							Gulp/GRUNT
+						</div>
+					</div>
+
+					<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 inputs2">
+						<div class="form-check">
+						    <input type="checkbox">
+ 							<span class="checkmark"></span>
+ 							Webpack
+						</div>
+						<div class="form-check">
+						    <input type="checkbox" checked>
+ 							<span class="checkmark"></span>
+ 							jQuery
+						</div>
+						<div class="form-check">
+						    <input type="checkbox" checked>
+ 							<span class="checkmark"></span>
+ 							Ипользую Git
+						</div>
+					</div>
+				</div>
+
+				<div class="about-img svg">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47px" height="47px">
+						<path fill-rule="evenodd"  fill="rgb(158, 158, 158)"
+						 d="M23.500,47.000 C10.542,47.000 -0.000,36.458 -0.000,23.500 C-0.000,10.542 10.542,-0.000 23.500,-0.000 C36.458,-0.000 47.000,10.542 47.000,23.500 C47.000,36.458 36.458,47.000 23.500,47.000 ZM23.500,1.000 C11.094,1.000 1.000,11.094 1.000,23.500 C1.000,35.906 11.094,46.000 23.500,46.000 C35.906,46.000 46.000,35.906 46.000,23.500 C46.000,11.094 35.906,1.000 23.500,1.000 ZM22.010,21.996 L38.015,21.996 L38.015,23.996 L22.010,23.996 L22.010,21.996 ZM22.010,15.993 L38.015,15.993 L38.015,17.993 L22.010,17.993 L22.010,15.993 ZM22.010,9.989 L38.015,9.989 L38.015,11.989 L22.010,11.989 L22.010,9.989 ZM17.996,22.989 L10.996,22.989 C9.892,22.989 8.996,22.094 8.996,20.989 L8.996,11.989 C8.996,10.885 9.892,9.989 10.996,9.989 L17.996,9.989 C19.101,9.989 19.996,10.885 19.996,11.989 L19.996,20.989 C19.996,22.094 19.101,22.989 17.996,22.989 ZM18.996,11.989 C18.996,11.437 18.548,10.989 17.996,10.989 L10.996,10.989 C10.444,10.989 9.996,11.437 9.996,11.989 L9.996,20.989 C9.996,21.541 10.444,21.989 10.996,21.989 L17.996,21.989 C18.548,21.989 18.996,21.541 18.996,20.989 L18.996,11.989 ZM38.015,29.998 L9.015,29.998 L9.015,27.998 L38.015,27.998 L38.015,29.998 ZM38.015,36.000 L9.015,36.000 L9.015,34.000 L38.015,34.000 L38.015,36.000 Z"/>
+					</svg>
+				</div>
+
+				<div class="subtitle about-subtitle" id = "aboutMyself">
+					Расскажите о себе
+				</div>
+
+				<div class="desc">
+					Напишите несколько предложений, чем привлекла наша вакансия <br>и что вы ожидаете от работы у нас.
+				</div>
+
+					<div class="col-lg-6">
+						<div class="form-group">
+						    <textarea class="form-control-lg form-control" id="textarea" rows="5" placeholder="Понравилась тем, что ...">Хочу попробовать себя в большом коллективе, с хорошим тим лидом. В компаниях, в которых я работал, я достиг максимум из того, что мог получить, ищу платформу для развития. HTML/CSS/JS учил сам, хочу коммуницировать с людьми, которые очень хороши в этой сфере, так как хочу улучшить свой код тем, что очень не просто нагуглить в интернете.
+						    </textarea>
+						  </div>
+					</div>
+
+				<button type="submit" class="btn btn-primary">Готово</button>
+			</form>
+		</div>
+
+	</section>
+</body>
+<script type="text/javascript" src = "js/main.js"></script>
+</html>
