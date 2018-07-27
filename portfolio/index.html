@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<title>Singularity</title>
+	<link rel="stylesheet" type="text/css" href="css/flex.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<nav class = "flex-col ai-center jc-between">
+
+			<div class="top-menu">
+				
+			</div>
+
+			<div class="menu">
+				<a href="index.html" data-before = "Home" class = "active"><img src="img/home.svg" class = "svg"></a>
+				<a href="about.html" data-before = "About"><img src="img/about.svg" class = "svg"></a>
+				<a href="portfolio.html" data-before = "Works"><img src="img/portfolio.svg" class = "svg"></a>
+				<a href="contact.html" data-before = "Contacts"><img src="img/contacts.svg" class = "svg"></a>
+			</div>
+
+			<div class="copyright">
+				2018
+			</div>
+		</nav>
+     <canvas id="background"></canvas>
+
+	<div class="content flex-row ai-stretch">
+		<div id="nav-burger">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<section class="page d-flex ai-center jc-center text-center">
+			<div class="name-title">
+				<div id="name-title-background"></div>
+				<div class="top">
+					<span class = "fadeIn" data-animation-delay = "0.1s">Dmitry</span>
+					<span class = "fadeIn" data-animation-delay = "0.2s">Golubev</span>
+				</div>
+				<div class="bottom">
+					<span class = "fadeIn" data-animation-delay = "0.3s">Web</span>
+					<span class = "fadeIn" data-animation-delay = "0.4s">Developer</span>
+				</div>
+				<div class = "d-flex ai-center jc-center name-button fadeIn" data-animation-delay = "0.5s">
+					<a class="button" href="portfolio.html">View Portfolio</a>
+				</div>
+			</div>
+		</section>
+	</div>
+</body>
+<script src="js/main.js"></script>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="js/tilt.js"></script>
+	<title>Singularity</title>
+	<link rel="stylesheet" type="text/css" href="css/flex.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<nav class = "flex-col ai-center jc-between">
+
+			<div class="top-menu">
+				
+			</div>
+
+			<div class="menu">
+				<a href="index.html" data-before = "Home"><img src="img/home.svg" class = "svg"></a>
+				<a href="about.html" data-before = "About"><img src="img/about.svg" class = "svg"></a>
+				<a href="portfolio.html" data-before = "Works" class = "active"><img src="img/portfolio.svg" class = "svg"></a>
+				<a href="contact.html" data-before = "Contacts"><img src="img/contacts.svg" class = "svg"></a>
+			</div>
+
+			<div class="copyright">
+				2018
+			</div>
+		</nav>
+     <canvas id="background" style = "pointer-events: none;"></canvas>
+
+	<div class="content flex-row ai-stretch">
+		<div id="nav-burger">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<section class="page ai-center flex-col jc-center text-center">
+			<div class="title text-center fadeIn" data-animation-delay = "0.2s" style = "margin-top: 100px;">
+				Portfolio
+			</div>
+			<div class="portfolio-container">
+				<a data-animation-delay = "0.2s" href = "http://i40466.hostde13.fornex.org/allumit.com/" target = "_blank" class="portfolio-item fadeIn" data-tilt >
+					<img src="img/allumit.png">
+					<div class="portfolio-overlay">
+						Wordpress + Jquery + HTML5 + CSS3
+					</div>
+				</a>
+				<a data-animation-delay = "0.3s" href = "http://park-residence.dp.ua/" target = "_blank" class="portfolio-item fadeIn" data-tilt>
+					<img src="img/park.png">
+					<div class="portfolio-overlay">
+						Wordpress + Jquery + HTML5 + CSS3
+					</div>
+				</a>
+				<a data-animation-delay = "0.4s" href = "https://red-line.org/"   target = "_blank" class="fadeIn portfolio-item" data-tilt>
+					<img src="img/redline.png">
+					<div class="portfolio-overlay">
+						Wordpress + Jquery + HTML5 + CSS3
+					</div>
+				</a>
+				<a data-animation-delay = "0.5s" href = "http://ks-makeup.com/" target = "_blank" class=" fadeIn portfolio-item" data-tilt>
+					<img src="img/ks-makeup.png">
+					<div class="portfolio-overlay">
+						Jquery + HTML5 + CSS3 + PHP
+					</div>
+				</a>
+				<a data-animation-delay = "0.6s" class="portfolio-item fadeIn" href = "http://luxhoreca.com.ua/" target="_blank" data-tilt>
+					<img src="img/luxhoreca.png">
+					<div class="portfolio-overlay">
+						Jquery + HTML5 + CSS3 + Opencart
+					</div>
+				</a>
+				<a data-animation-delay = "0.7s" href = "http://i40466.hostde13.fornex.org/itis.net/" target = "_blank" class="portfolio-item fadeIn" data-tilt>
+					<img src="img/itis.png">
+					<div class="portfolio-overlay">
+						Jquery + HTML5 + CSS3 + Wordpress
+					</div>
+				</a>
+				<a data-animation-delay = "0.8s" class="portfolio-item fadeIn" href = "http://i40466.hostde13.fornex.org/football.itop.media/" target = "_blank" data-tilt>
+					<img src="img/football.png">
+					<div class="portfolio-overlay">
+						Jquery + HTML5 + CSS3 + Wordpress
+					</div>
+				</a>
+				<a data-animation-delay = "0.9s" class="portfolio-item fadeIn" href ="http://lazertag.s84.upress.link/" target = "_blank" data-tilt>
+					<img src="img/lazer.png">
+					<div class="portfolio-overlay">
+						Jquery + HTML5 + CSS3 + Wordpress
+					</div>
+				</a>
+			</div>
+		</section>
+	</div>
+</body>
+<script src="js/main.js"></script>
+</html>

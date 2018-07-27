@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<title>Singularity</title>
+	<link rel="stylesheet" type="text/css" href="css/flex.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<nav class = "flex-col ai-center jc-between">
+
+			<div class="top-menu">
+				
+			</div>
+
+			<div class="menu">
+				<a href="index.html" data-before = "Home"><img src="img/home.svg" class = "svg"></a>
+				<a href="about.html" data-before = "About" class = "active"><img src="img/about.svg" class = "svg"></a>
+				<a href="portfolio.html" data-before = "Works"><img src="img/portfolio.svg" class = "svg"></a>
+				<a href="contact.html" data-before = "Contacts"><img src="img/contacts.svg" class = "svg"></a>
+			</div>
+
+			<div class="copyright">
+				2018
+			</div>
+		</nav>
+     <canvas id="background"></canvas>
+
+	<div class="content flex-row ai-stretch">
+		<div id="nav-burger">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<section class="page d-flex ai-center flex-col jc-center text-left">
+			<div class="about-container flex-row ai-center">
+				<div class="col flex-col ai-center jc-center">
+					<div class="title fadeIn">
+						A few details about myself
+					</div>
+
+					<div class="desc fadeIn" data-animation-delay = "0.2s">
+						Teamwork, transparent communication and formulation of clear objectives.<br> Self-organization, deadlines, multitasking.
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="title fadeIn" data-animation-delay = "0.4s">
+						Skills: 
+					</div>
+
+					<div class="languages fadeIn">
+						<div class="language" data-width = "90" data-animation-delay = "0">
+							<span>HTML5</span>
+							<div class="before" data-transition-delay = "0.55s"></div>
+							<div class="percent"></div>
+						</div>
+						<div class="language" data-width = "88">
+							<span>CSS3</span>
+							<div class="before" data-transition-delay = "0.6s"></div>
+							<div class="percent"></div>
+						</div>
+						<div class="language" data-width = "84">
+							<span>Jquery</span>
+							<div class="before" data-transition-delay = "0.65s"></div>
+							<div class="percent"></div>
+						</div>
+						<div class="language" data-width = "80">
+							<span>Wordpress</span>
+							<div class="before" data-transition-delay = "0.7s"></div>
+							<div class="percent"></div>
+						</div>
+						<div class="language" data-width = "76">
+							<span>PHP</span>
+							<div class="before" data-transition-delay = "0.75s"></div>
+							<div class="percent"></div>
+						</div>
+						<div class="language" data-width = "73">
+							<span>Bootstrap 3/4</span>
+							<div class="before" data-transition-delay = "0.75s"></div>
+							<div class="percent"></div>
+						</div>
+						<div class="language" data-width = "70">
+							<span>Opencart</span>
+							<div class="before" data-transition-delay = "0.8s"></div>
+							<div class="percent"></div>
+						</div>
+						<div class="language" data-width = "65">
+							<span>JS</span>
+							<div class="before" data-transition-delay = "0.85"></div>
+							<div class="percent"></div>
+						</div>
+						<div class="language" data-width = "60">
+							<span>Gulp</span>
+							<div class="before" data-transition-delay = "0.9s"></div>
+							<div class="percent"></div>
+						</div>
+						<div class="language" data-width = "55">
+							<span>SQL</span>
+							<div class="before" data-transition-delay = "1s"></div>
+							<div class="percent"></div>
+						</div>
+						<div class="language" data-width = "50">
+							<span>Angular 2 > </span>
+							<div class="before" data-transition-delay = "1.05s"></div>
+							<div class="percent"></div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+	</div>
+</body>
+<script src="js/main.js"></script>
+</html>

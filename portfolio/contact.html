@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<title>Singularity</title>
+	<link rel="stylesheet" type="text/css" href="css/flex.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<nav class = "flex-col ai-center jc-between">
+
+			<div class="top-menu">
+				
+			</div>
+
+			<div class="menu">
+				<a href="index.html" data-before = "Home"><img src="img/home.svg" class = "svg"></a>
+				<a href="about.html" data-before = "About"><img src="img/about.svg" class = "svg"></a>
+				<a href="portfolio.html" data-before = "Works"><img src="img/portfolio.svg" class = "svg"></a>
+				<a href="contact.html" data-before = "Contacts" class = "active"><img src="img/contacts.svg" class = "svg"></a>
+			</div>
+
+			<div class="copyright">
+				2018
+			</div>
+		</nav>
+     <canvas id="background"></canvas>
+
+	<div class="content flex-row ai-stretch">
+		<div id="nav-burger">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<section class="page flex-col ai-center jc-center text-center">
+			<div class="title fadeIn" data-animation-delay = "0.2s">
+				Contact me
+			</div>
+			<div class="contacts-container">
+				<a href = "mailto:singularity123097" class="contact-item fadeIn" data-animation-delay = "0.2s">
+					<div class="contact-image">
+						<img src="img/email.svg" class = "svg">
+					</div>
+					<div class="contact-title">
+						Email
+					</div>
+					<div class="contact-href">
+						singularity123097@gmail.com
+					</div>
+				</a>
+
+				<a href = "tel:+380999149987" class="contact-item fadeIn" data-animation-delay = "0.4s">
+					<div class="contact-image">
+						<img src="img/phone.svg" class = "svg">
+					</div>
+					<div class="contact-title">
+						Phone
+					</div>
+					<div class="contact-href">
+						+380999149987
+					</div>
+				</a>
+
+				<a href = "skype:singularity123097" class="contact-item fadeIn" data-animation-delay = "0.6s">
+					<div class="contact-image">
+						<img src="img/skype.svg" class = "svg">
+					</div>
+					<div class="contact-title">
+						Skype
+					</div>
+					<div class="contact-href">
+						singularity123097
+					</div>
+				</a>
+
+				<a href = "http:vk.com/id53531336" target="_blank" class="contact-item fadeIn" data-animation-delay = "0.8s">
+					<div class="contact-image">
+						<img src="img/vk.svg" class = "svg">
+					</div>
+					<div class="contact-title">
+						Vk
+					</div>
+					<div class="contact-href">
+						vk.com/id53531336
+					</div>
+				</a>
+			</div>
+		</section>
+	</div>
+</body>
+<script src="js/main.js"></script>
+</html>
