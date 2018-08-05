@@ -313,12 +313,13 @@ nav .menu{
 	transform: translate(-37%, 200px);
     z-index: 150;
     opacity: 0;
-    transition-duration: 0.2s;
+    transition-duration: 0.4s;
     transition-delay: 0.2s;
-    transition-timing-function: ease-in;
 }
 
-
+#device.linear{
+	transition-timing-function: ease-in;
+}
 .bubble{
 	position: absolute;
 	transition-duration: 0.5s;

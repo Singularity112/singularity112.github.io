@@ -40,7 +40,7 @@ jQuery(function($){
 				$('#bubble1').addClass('bubble3');
 				setTimeout(e=>{
 					$('#bubble1').addClass('bubble4');
-					$('#device').css({'transform': 'translate(0,0)', 'transition-delay' : '0s', 'transition-duration': '0.3s'});
+					$('#device').css({'transform': 'translate(0,0)', 'transition-delay' : '0s', 'transition-duration': '0.3s'}).addClass('linear');
 				},700);
 			},300);
 		}, 700);
