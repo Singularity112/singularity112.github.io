@@ -477,15 +477,15 @@ var GridComponent = /** @class */ (function () {
         this.setAllowedCols();
         setTimeout(function (e) {
             _this.makeRowPredictions();
-        }, 5000);
+        }, 2000);
         setTimeout(function (e) {
             _this.makeColPredictions();
-        }, 10000);
+        }, 5000);
         this.makeSectionPrediction();
         setTimeout(function (e) {
             _this.CompleteSudoku();
             _this.setNumbers();
-        }, 20000);
+        }, 6000);
     };
     GridComponent.prototype.ngOnInit = function () {
         this.setSection();
