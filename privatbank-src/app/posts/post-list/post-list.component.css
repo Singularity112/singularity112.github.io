@@ -1,0 +1,22 @@
+.post-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+    grid-gap: 15px;
+}
+
+.pagination {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pag-item {
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-right: 15px;
+}

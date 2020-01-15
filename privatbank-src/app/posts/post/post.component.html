@@ -1,0 +1,11 @@
+<div class="post">
+  <div class="post-title">
+    {{ title || 'No Title' }}
+  </div>
+  <div class="post-description">
+    {{ description | shortDesc : 45 }}
+  </div>
+  <div class="post-button" (click)="onClick(id)">
+    trigger onclick, id: {{ id }}
+  </div>
+</div>

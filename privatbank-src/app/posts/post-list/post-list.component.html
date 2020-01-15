@@ -1,0 +1,24 @@
+<div>
+    Last clicked post: {{lastClicked}}
+</div>
+
+<div class="post-list">
+  <app-post *ngFor="let post of postsInCurrentPage"
+            description={{post.body}} 
+            title={{post.title}}
+            id={{post.id}}
+            (clicked)="onClicked($event)">
+    </app-post>
+</div>
+
+<div class="pagination">
+    <div class="pag-item" (click)="showPostsInPage(1)">
+        first
+    </div>
+    <div class="pag-item" *ngFor="let page of ' '.repeat(pages).split(''), let i = index" (click)="showPostsInPage(i + 1)">
+        {{i + 1}}
+    </div>
+    <div class="pag-item" (click)="showPostsInPage(pages)">
+        last
+    </div>
+</div>
