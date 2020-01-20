@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tilda</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    
+    <div id = "compiled">
+        
+    </div>
+
+    <div class="container">
+        <div class="new-block" onclick="closeModals(); openModal('new-block-selector')">
+            Добавить новый блок
+        </div>
+    </div>
+
+    <div class="new-block-selector modal" id="new-block-selector">
+        <div class="new-block-selector-select" onclick="addBlock(galleryTemplate);">
+            Галерея
+        </div>
+        <div class="new-block-selector-select" onclick="addBlock(servicesTemplate);">
+            Услуги
+        </div>
+
+        <div class="new-block-selector-close" onclick="closeModals()">
+            закрыть
+        </div>
+    </div>
+    
+    <div class="text-changer-modal modal" id="text-changer-modal">
+        <div class="text-changer-item">
+            <div class="text-changer-item-text">
+                Размер шрифта
+            </div>
+            <div class="text-changer-item-input">
+                <input type="text" value = "12" onchange="changeTextStyle(this);" data-style="font-size" data-html-style="fontSize">
+            </div>
+        </div>
+
+        <div class="text-changer-item">
+            <div class="text-changer-item-text">
+                Цвет шрифта
+            </div>
+            <div class="text-changer-item-input">
+                <input type="text" value = "#fffff" onchange="changeTextStyle(this);" data-style="color">
+            </div>
+        </div>
+
+        <div class="text-changer-item">
+            <div class="text-changer-item-text">
+                Жирность
+            </div>
+            <div class="text-changer-item-input">
+                <input type="text" value = "500" onchange="changeTextStyle(this);" data-style="font-weight" data-html-style="fontWeight">
+            </div>
+        </div>
+
+        <div class="text-changer-item">
+            <div class="text-changer-item-text">
+                выравнивание
+            </div>
+            <div class="text-changer-item-input">
+                <select onchange="changeTextStyle(this);" data-style="text-align" data-html-style="textAlign">
+                    <option value="left">left</option>
+                    <option value="right">right</option>
+                    <option value="center">center</option>
+                    <option value="justify">justify</option>
+                </select>
+            </div>
+        </div>
+        <div class="text-changet-item text-changer-close" onclick="closeModals()">
+            закрыть
+        </div>
+    </div>
+
+    <div class="image-changer-modal modal" id="image-changer-modal">
+        <input type="text" onchange="changeImage(this);">
+        <div class="image-closer" onclick="closeModals()"> 
+            ЗАКРЫТЬ
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="services.js"></script>
+    <script src="galery.js"></script>
+</body>
+</html>
