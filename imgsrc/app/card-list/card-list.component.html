@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="card-list">
+    <card *ngFor="let card of cards" 
+    [cardobj]="card"
+    (onCardClick)="openDetails($event)"></card>
+  
+    <div class="add-image" (click)="openDetails(defaultCard)">
+      ADD IMAGE
+    </div>
+  </div>
+</div>
+
+<image-details 
+[isOpen]="isDetailsOpen"
+(onClose)="changeImage($event)"
+[cardobj]="currentCard"
+[isNew]="isNew"
+> </image-details>

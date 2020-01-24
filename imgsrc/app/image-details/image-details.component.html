@@ -1,0 +1,39 @@
+<div class="image-details-container" [class.open]="isOpen">
+  <div class="container row">
+    <div class="image-col">
+      <card [cardobj]="cardobj"></card>
+    </div>
+    <div class="data-col">
+      <label>
+        Tooltip text
+        <input type="text" [(ngModel)]="cardobj.text">
+      </label>
+      <hr>
+      <label>
+        Tooltip color
+        <input [(colorPicker)]="cardobj.color" [style.background]="cardobj.color">
+      </label>
+      <hr>
+      <label>
+        Tooltip offset top
+        <input type="text" [(ngModel)]="cardobj.top">
+      </label>
+      <hr>
+      <label>
+        Tooltip offset left
+        <input type="text" [(ngModel)]="cardobj.left">
+      </label>
+      <hr>
+      <label>
+        image
+        <input type="file" (change)="uploadFile($event)">
+      </label>
+      <div class="close" (click)="save()">
+        SAVE
+      </div>
+      <div class="delete" (click)="delete()" [hidden]="isNew">
+        DELETE
+      </div>
+    </div>
+  </div>
+</div>
