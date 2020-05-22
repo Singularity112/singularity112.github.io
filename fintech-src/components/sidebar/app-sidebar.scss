@@ -1,0 +1,11 @@
+.sidebar {
+    grid-area: sidebar;
+    grid-row: 2 / 3;
+    overflow: hidden;
+    border-right: 1px solid #d4d4d5;
+}
+
+.tab {
+    max-height: calc(100% - 43px);
+    overflow-y: scroll;
+}
