@@ -1,0 +1,64 @@
+@import '@/scss/variables.scss';
+@import '@/scss/mixins.scss';
+
+.button {
+  @include flexCenter;
+  height: $elementHeight;
+  border-radius: $elementRadius;
+  font-size: $fs-medium;
+  transition-duration: $transition-timing;
+  cursor: pointer;
+  transform: translateY(0);
+
+  &.fullwidth {
+    width: 100%;
+  }
+
+  &:not(.fullwidth) {
+    padding-left: $elementSidePadding;
+    padding-right: $elementSidePadding;
+  }
+
+  &:not(.success):not(.error):not(.line) {
+    background-color: $colorPrimary;
+    color: $colorWhite;
+    border: 1px solid $colorPrimary;
+    &:hover {
+      background-color: $colorWhite;
+      color: $colorPrimary
+    }
+  }
+
+  &.success {
+    background-color: $colorGreen;
+    color: $colorWhite;
+  }
+
+  &.error {
+    background-color: $colorRed;
+    color: $colorWhite;
+  }
+
+  &.line {
+    background-color: transparent;
+    color: $colorPrimary;
+    border: 1px solid $colorPrimary;
+
+    & svg path {
+      fill: $colorPrimary;
+    }
+
+    &.disabled {
+      pointer-events: none;
+      border-color: $colorSecondary;
+
+      & svg path {
+        fill: $colorSecondary;
+      }
+    }
+  }
+
+  &:active {
+    transform: translateY(2px)
+  }
+}
