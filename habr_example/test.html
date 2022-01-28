@@ -37,7 +37,7 @@ function changeHouse(selectedItem) {
     if (!selectedItem.value) {
         return;
     }
-    fetch(`http://hp-api.herokuapp.com/api/characters/house/${selectedItem.value}`).then(res => res.json()).then(res => {
+    fetch(`https://hp-api.herokuapp.com/api/characters/house/${selectedItem.value}`).then(res => res.json()).then(res => {
         res = res.splice(0, 15);
         res.forEach((item) => {
 
