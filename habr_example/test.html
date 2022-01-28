@@ -1,0 +1,60 @@
+<select id="sel" onchange="changeHouse(this)">
+     <option value="" selected>Select House</option>
+ 	<option value="slytherin">slytherin</option>
+<option value="ravenclaw">ravenclaw</option>
+<option value="hufflepuff">hufflepuff</option>
+<option value="gryffindor">gryffindor</option>
+</select>
+
+<div id = "result">
+  
+</div>
+
+<style>
+    #result {
+       display: grid;
+       grid-template-columns: repeat(auto-fill, 250px);
+grid-auto-rows: 250px;
+	  grid-gap: 20px;
+    }
+
+.item {
+   overflow: hidden;
+}
+
+    img {
+    width: 100%;
+    display: block;
+height: 100%;
+    object-fit: cover;
+    }
+</style>
+
+<script>
+
+function changeHouse(selectedItem) {
+    document.getElementById("result").innerHTML = "";
+    if (!selectedItem.value) {
+        return;
+    }
+    fetch(`http://hp-api.herokuapp.com/api/characters/house/${selectedItem.value}`).then(res => res.json()).then(res => {
+        res = res.splice(0, 15);
+        res.forEach((item) => {
+
+            const div = document.createElement("div");
+            div.classList.add("item");
+            const divName = document.createElement("div");
+            const img = document.createElement("img");
+            divName.textContent = item.name;
+            img.src = item.image || "https://i.stack.imgur.com/l60Hf.png";
+            divName.classList.add("name");
+
+            div.append(divName);
+            div.append(img);
+
+            document.getElementById("result").append(div);
+
+        });
+    });
+
+}</script>
