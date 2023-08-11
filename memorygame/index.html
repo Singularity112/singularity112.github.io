@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Basic usage</h2>
+      <code>
+        const matchGrid = new MatchGrid(document.getElementById(<span
+          class="text"
+          >"game"</span
+        >));
+      </code>
+      <div id="game"></div>
+
+      <h2>Custom size with custom cols, rows, amount and timer</h2>
+      <code>
+        const matchGrid2 = new MatchGrid(document.getElementById(<span
+          class="text"
+          >"game2"</span
+        >), {
+        <span class="code">
+          width: 1000, height: 600, columns: 2, rows: 2, time: 60
+        </span>
+        });
+      </code>
+      <div id="game2"></div>
+
+      <h2>Custom card images</h2>
+      <code>
+        const matchGrid3 = new MatchGrid(document.getElementById(<span
+          class="text"
+          >"game3"</span
+        >), {
+        <span class="code">
+          columns: 3, rows: 4, symbols: [1, 2, 3, 4, 5, 6, 7, 8], </span
+        >});
+      </code>
+      <div id="game3"></div>
+
+      <h2>Custom theme</h2>
+      <code>
+        const matchGrid3 = new MatchGrid(document.getElementById(<span
+          class="text"
+          >"game4"</span
+        >), {
+        <span class="code">
+          theme: { color: "red", cardBackColor: "green", cardColor: "blue", gap:
+          "40px", },
+        </span>
+        });
+      </code>
+      <div id="game4"></div>
+
+      <h2>Dynamic</h2>
+      <div class="dynamic-inputs">
+        <label>
+          rows
+          <input onchange="onRowChange(this.value)" type="number" />
+        </label>
+        <label>
+          columns
+          <input onchange="onColumnChange(this.value)" />
+        </label>
+        <label>
+          timer
+          <input onchange="onTimerChange(this.value)" />
+        </label>
+      </div>
+      <div id="game5"></div>
+
+      <div class="padding-bottom"></div>
+    </div>
+  </body>
+
+  <link href="./styles.css" rel="stylesheet" />
+  <link href="./MatchGrid.css" rel="stylesheet" />
+  <script src="./helpres.js"></script>
+  <script src="./Card.js"></script>
+  <script src="./MatchGrid.js"></script>
+
+  <script src="./script.js"></script>
+</html>

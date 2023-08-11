@@ -1,0 +1,96 @@
+.view-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-family: sans-serif;
+}
+
+.menu {
+  padding: 20px;
+  border-radius: 12px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu button {
+  margin-top: 20px;
+}
+
+.btn {
+  border-radius: 6px;
+  font-size: 20px;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: lightgray;
+  color: inherit;
+}
+
+.btn:active {
+  background-color: grey;
+  color: white;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.game-grid {
+  display: grid;
+  grid-auto-rows: 1fr;
+  height: calc(100% - 50px);
+  padding: 20px;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.card {
+  font-size: 60px;
+  border-radius: 8px;
+  cursor: pointer;
+  perspective: 1000px;
+}
+
+.card-holder {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform-style: preserve-3d;
+}
+
+.card .card-front,
+.card .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  backface-visibility: hidden;
+}
+
+.card .card-front {
+  background-color: #2980b9;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(180deg);
+}
+
+.card .card-back {
+  background-color: #bbb;
+}
+
+.timer {
+  height: 50px;
+  font-size: 20px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+}
